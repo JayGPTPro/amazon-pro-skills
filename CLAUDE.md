@@ -1,11 +1,11 @@
 # Amazon Pro Skills . Project Instructions
 
-A free, open library of 50 production-grade Claude Code skills for Amazon sellers.
+A free, open library of 80 production-grade Claude Code skills for Amazon sellers.
 Built by Jay GPT Pro for the AI Vault community.
 
 ## What this project is
 
-50 standalone Amazon-seller skills. Each one is a single `SKILL.md` inside its own
+80 standalone Amazon-seller skills. Each one is a single `SKILL.md` inside its own
 folder, installable via `npx skills add JayGPTPro/amazon-pro-skills -g`.
 
 The library is a rebuilt-and-upgraded successor inspired by the nexscope-ai/Amazon-Skills
@@ -49,5 +49,5 @@ amazon-pro-skills/
   README.md
   CLAUDE.md
   docs/SPEC.md  TASKS.md  DECISIONS.md
-  amz-[name]/SKILL.md   (x50)
+  amz-[name]/SKILL.md   (x80)
 ```
