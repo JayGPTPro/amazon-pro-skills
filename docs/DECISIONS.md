@@ -56,3 +56,20 @@
   2026 fee tier, etc).
 - Net result: 71 skills, each carrying its own decision. no two skills produce
   the same artifact from the same inputs.
+
+## Editorial cleanup round 2. May 2026, 71 → 64
+After a 1-to-71 ranking exercise, the bottom 7 were cut. The criterion was
+"sub-audience size + immediacy of action." Each cut skill is fine on its own,
+but addresses a sub-segment too narrow for the library's positioning as a
+universal seller toolkit.
+
+Cut (7):
+- amz-3pl-vs-fba-decision. Narrow segment (oversize, slow, large operations)
+- amz-repricing-strategy. Mostly reseller use case, not PL-first
+- amz-seller-analytics. Competitive intel, doesn't drive immediate action
+- amz-dsp-readiness-audit. Audience too small (large brands only)
+- amz-global-selling. Few sellers expand internationally
+- amz-international-listings. Even smaller sub-audience
+- amz-exit-valuation-prep. One moment in a brand's life
+
+Result: The Expansion category is gone. Strategic and lifecycle has one skill.

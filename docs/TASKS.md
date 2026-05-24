@@ -1,23 +1,21 @@
 # Build Tasks
 
-All 71 skills built and shipped. See README.md for the full categorized list.
+All 64 skills built and shipped. See README.md for the full categorized list.
 
-## Editorial cleanup (May 2026)
+## Editorial cleanups (May 2026)
 
-The library was reduced from 80 to 71 after a full editorial audit.
+### Round 1: 80 → 71
+8 high-overlap merges + 1 cut after a full editorial audit. See DECISIONS.md.
 
-**Cut (1):** amz-listing-versioning-tracker (replaced by Amazon's Manage Your Experiments)
+### Round 2: 71 → 64
+Seven skills cut as too niche or addressing too-small a sub-audience:
+- amz-3pl-vs-fba-decision
+- amz-repricing-strategy (mostly reseller use case)
+- amz-seller-analytics (competitive intel, doesn't drive immediate action)
+- amz-dsp-readiness-audit (audience: very large brands only)
+- amz-global-selling
+- amz-international-listings
+- amz-exit-valuation-prep (relevant once in a brand's life)
 
-**Merged (8):**
-- amz-niche-finder → amz-product-research (Niche Scorecard as sub-framework)
-- amz-search-optimization → amz-listing-optimization (A9 + COSMO ranking diagnosis)
-- amz-voice-search-listing → amz-ai-search-optimization (Voice query anatomy section)
-- amz-enhanced-brand-content → amz-a-plus-content (Premium A+ tier section)
-- amz-shipping-calculator → amz-fba-calculator (Shipping cost layer subsection)
-- amz-vine-program → amz-review-strategy (Vine deep-dive subsection)
-- amz-restock-forecaster → amz-inventory-management (DoC schedule and limit check)
-- amz-dayparting-strategy → amz-ppc-campaign (Advanced appendix with data-quality gate)
-
-**Improved (11):** brand-registry, customer-question-mining, coupon-strategy,
-fba-calculator, keyword-research, rank-tracker, launch-runway, seasonal-planning,
-private-label, storefront-design, listing-optimization.
+The Expansion category is removed entirely. Strategic and lifecycle is down
+to one skill (amz-pricing-war-defense).
