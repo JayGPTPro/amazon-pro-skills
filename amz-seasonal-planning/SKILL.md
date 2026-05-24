@@ -45,6 +45,40 @@ The single hardest deadline is the inventory order. It carries the full lead tim
 production, freight, customs, and FBA check-in. Miss it and nothing else matters,
 because there is nothing to sell at the peak.
 
+## The two Prime events. handle them separately
+
+Amazon now runs two major Prime events each year, and sellers conflate them all
+the time. They have different prep windows, different inventory leads, and
+different ad warmup curves.
+
+### Prime Day (July)
+
+The flagship summer event. Lands in mid-July. Prep window opens around **May
+15** for deal submissions, inventory must be checked in by late June at the
+latest, listing refresh live and indexed by late June, ad budget ramping
+through the first two weeks of July. The event runs hot. expect peak CPCs and a
+sharp demand spike on enrolled deals.
+
+### Prime Big Deal Days (October)
+
+The fall counterpart, positioned as the kickoff to Q4. Lands in early to mid
+October. Prep window opens around **August 15** for deal submissions, inventory
+must be checked in by mid-September, listing refresh live and indexed by late
+September, ad budget ramping through the first week of October.
+
+Critical differences from Prime Day. The October event sits inside the broader
+Q4 ramp, so the ad warmup is longer (the demand curve begins building in late
+September) and the wind-down is shorter (it bleeds straight into Black Friday
+and Cyber Monday prep, not into a quiet month). Inventory lead time is also
+tighter for sellers with overseas freight, because the October event lands
+during the same window when Q4 holiday inventory is moving on the same routes.
+Order earlier.
+
+A seller running both events does not run the same plan twice. Different prep
+windows, different inventory PO dates, different ad warmup, and the October
+event must hand off cleanly to the November and December peaks without leaving
+the listing depleted.
+
 ## The five workstreams
 
 1. **Inventory.** Order quantity from a seasonal demand forecast, not the flat

@@ -29,6 +29,30 @@ This skill builds it.
 - A relaunch of a product that never gained traction.
 - Planning the launch budget and timeline before committing inventory.
 
+## Launch budget by category tier
+
+Total 30-day launch spend (ads, deal fees, coupon redemptions, Vine costs)
+scales with category and ASP. A 12 USD pantry item and a 120 USD electronics
+item have different launch math. plan to a tier, not a flat number.
+
+| Category tier | Typical ASP | 30-day launch budget |
+|---------------|-------------|----------------------|
+| Small / lifestyle / impulse | Under 20 USD | 500 to 2,000 USD |
+| Mid / household / utility   | 20 to 50 USD | 2,000 to 10,000 USD |
+| Premium / electronics / gear| Above 50 USD | 10,000 USD and up |
+
+The ranges are not the cost of the product, they are the cost of the launch. CPC
+in the small/lifestyle tier is low and ranking is mostly a long-tail
+conversion-rate game, so the runway is cheap. In the premium tier CPC is high,
+Phase 1 ACoS runs hot, and the launch needs depth to survive 30 days at the rate
+needed to earn rank. Picking the wrong tier is the most common reason a launch
+runs out of money in week 2.
+
+Inside the tier, split the budget roughly. 60 percent Phase 1 (ignition, hottest
+ACoS), 25 percent Phase 2 (velocity push, deals or coupon), 15 percent Phase 3
+(stabilize, shifting to harvest). adjust if the price ladder calls for a deeper
+mid-launch deal.
+
 ## The framework. The Four-Phase Runway
 
 A launch runs in four phases. Each phase has one job, and the next phase fails if the

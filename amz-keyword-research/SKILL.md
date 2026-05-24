@@ -48,6 +48,29 @@ Every keyword has two properties that decide what to do with it: **intent stage*
 - **Adjacent.** Related use case or audience. worth targeting.
 - **Loose.** Tangential. backend or skip. never the title.
 
+## AI search keywords
+
+Rufus, Alexa+, and the COSMO layer surface listings on a wider range of queries
+than literal A9 search. Three keyword types specifically earn AI-surface citations
+and should be included in the map even when their direct search volume looks low.
+
+- **Question-form keywords.** "what is the best [X]", "how to choose [X]", "how to
+  use [X] for [Y]". These match the way buyers prompt Rufus and how Alexa+ parses
+  spoken queries. Place answers in bullets and in the Customer Questions tab.
+- **Comparison keywords.** "[brand or product] vs [alternative]", "[X] alternative
+  to [Y]", "difference between [X] and [Y]". COSMO uses these to position the
+  listing against the comparison set. Place in A+ comparison-chart copy and in a
+  bullet that names the comparison without naming a competitor brand.
+- **Audience-specific keywords.** "[product] for [audience]", e.g. "running shoes
+  for runners over 50", "stroller for tall parents", "yoga mat for hot yoga". COSMO
+  reads these as explicit audience intent and re-ranks listings that clearly serve
+  the named audience. Place in the title's qualifier slot, in a bullet, and in
+  backend keywords.
+
+These are not separate from the map below. they slot into Bullet/A+, Backend, and
+PPC placements as normal, with the launch priority weighted toward the audience-
+specific ones because they convert best and face the least competition.
+
 ## The placement rule
 
 | Keyword type | Placement |

@@ -41,6 +41,34 @@ keyword set into three tiers and track accordingly.
 
 Tracking the 10 keywords that make the money beats tracking 200 that do not.
 
+## Tracking the AI recommendations panel
+
+Standard search rank is no longer the whole picture. A growing share of buyer
+attention sits in the AI recommendations surfaces. Rufus citation panels on the
+web, the Alexa+ spoken recommendation, the "Researched by AI" recommendation
+strip, and the COSMO-driven cross-sell modules. A listing can hold organic
+position 4 and still lose share because it does not get cited by Rufus, and a
+listing can sit on page 3 of literal search and still win meaningful traffic
+because Rufus quotes it.
+
+Track these in addition to standard rank, not in place of it. for each money
+keyword, also log:
+
+- **Rufus citation presence.** Type the keyword or a question variant of it into
+  search and check whether the AI panel cites the ASIN. Track yes/no daily on
+  money keywords, weekly on growth keywords.
+- **Recommendation strip presence.** Whether the listing appears in the
+  "Researched by AI" or equivalent recommendation strip for the keyword's intent
+  cluster.
+- **Alexa+ spoken match.** For voice-relevant categories, periodically test the
+  voice query and log whether Alexa+ returns this ASIN as a top recommendation.
+
+Treat these the same way as organic rank. distinguish noise from signal, map a
+sudden drop to a cause (a listing change, a review shift, an attribute that went
+empty), and act only on real signals. A listing that loses Rufus citation while
+holding organic rank is usually a COSMO intent-match problem. the use case or
+audience signal in the copy went vague (see amz-ai-search-optimization).
+
 ## Reading a rank movement
 
 A rank number alone is meaningless. Three rules for reading a movement.

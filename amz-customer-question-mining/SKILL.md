@@ -48,6 +48,30 @@ them, and feeds the themes back into the listing.
 - Signed. Says "Brand Team" or your store name.
 - Updates the listing copy if the question reveals a missing fact.
 
+## Rufus citation patterns
+
+Rufus and the AI surface cite Customer Questions answers preferentially when those
+answers fit a specific shape. Writing for that shape lifts citation rate.
+
+- **Branded and factual, not promotional.** "Yes, this fits a 15-inch MacBook Pro,
+  external dimensions 14.2 x 9.8 x 0.8 inches." Promotional language
+  ("the best sleeve for your laptop", "you'll love how it fits") gets filtered out.
+  Rufus quotes the answer that reads like a spec sheet, not the one that reads
+  like marketing.
+- **Phrased as the buyer phrased it.** Mirror the buyer's wording in the first
+  clause of the answer. "Will this fit a 15-inch MacBook Pro?" gets answered "Yes,
+  this fits a 15-inch MacBook Pro." not "Compatibility includes MacBook Pro 15."
+  Rufus matches semantic similarity. lead with the buyer's verbatim noun phrase.
+- **Answer length 80 to 200 words.** Under 80 the answer is too thin to cite. over
+  200 it gets truncated and the cited fragment loses context. The sweet spot is one
+  clear yes/no, then 2-3 sentences of specific attribute support, then one
+  sentence of practical guidance.
+- **Specific attribute claims that match the listing.** Every claim in the answer
+  should also appear in the listing copy, A+, or attributes. Rufus cross-references.
+  an answer that says "water resistant to IPX4" pulls more weight when the listing
+  attributes also carry "water resistance: IPX4". If the listing does not back the
+  claim, fix the listing first, then answer.
+
 ## Step by step
 
 1. **Collect inputs.** The listing URL or the Customer Questions paste, the

@@ -56,7 +56,19 @@ fresh and give returning visitors a reason to look.
 A beautiful Store with no traffic produces nothing. Plan the feeds:
 
 - **Sponsored Brands ads** can land on the Store instead of a product page. this is
-  the biggest controllable feed.
+  the biggest controllable feed. Two SB creatives serve different jobs and route
+  differently. use the right one or the Store stays dead.
+  - **Store Spotlight creative** routes the click to the Store landing page (the
+    home or a specified Store sub-page). This is the creative to use when the
+    goal is driving Store traffic, surfacing the brand across the catalog, and
+    cross-selling beyond the lead ASIN.
+  - **Product Collection creative** routes the click to an ASIN detail page. This
+    is the creative for direct-conversion campaigns on a specific product. it
+    does not drive Store traffic.
+  - Rule of thumb. If the campaign goal is "build the brand and cross-sell",
+    Store Spotlight. If the goal is "win the unit on this specific keyword",
+    Product Collection. Do not use Product Collection on brand or category
+    keywords expecting Store traffic. it will not happen.
 - **The brand byline** on every listing links to the Store.
 - **Posts and external traffic** (social, email, influencers) should point at the
   Store, not a single listing, so the visitor sees the whole brand.

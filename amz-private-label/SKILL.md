@@ -53,6 +53,9 @@ communication quality. Order samples from the top two or three. Never commit to 
 order from a supplier whose sample you have not held. The sample must reflect the Gate
 2 differentiation.
 
+Next-step skills for this gate. amz-supplier-negotiation-script (price, MOQ, terms)
+and amz-sourcing-diversification (avoid single-supplier risk before scale).
+
 ### Gate 4. Unit economics
 
 Run the full numbers: landed cost (factory price plus freight plus duty), Amazon fees,

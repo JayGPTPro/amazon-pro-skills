@@ -1,15 +1,20 @@
 ---
 name: amz-ppc-campaign
 description: >-
-  Build or audit Amazon Sponsored Products campaigns. Mode A builds a campaign
-  structure from scratch with keyword groups, match types, and starting bids
-  from product margins. Mode B audits existing campaigns from a search term
-  report and returns bid changes, negatives, and a graduation plan. Use when a
+  Build or audit Amazon Sponsored Products campaigns, and layer dayparting on
+  mature accounts. Mode A builds a campaign structure from scratch with keyword
+  groups, match types, and starting bids from product margins. Mode B audits
+  existing campaigns from a search term report and returns bid changes,
+  negatives, and a graduation plan. An advanced dayparting appendix schedules
+  bids and budgets by hour and day for accounts with enough data. Use when a
   user asks to build PPC campaigns, structure Sponsored Products, set ad bids,
-  audit a campaign, fix ACoS, or plan an auto and exact campaign structure.
-  Trigger phrases: "PPC campaign", "sponsored products", "campaign structure",
-  "set bids", "audit my ads", "fix my ACoS", "auto and exact campaigns". Works
-  with zero tools. the user provides margins, keywords, or a search term report.
+  audit a campaign, fix ACoS, plan an auto and exact campaign structure, or
+  dayparting, bid scheduling, ad scheduling by time of day, peak shopping
+  hours, or wasted ad spend at low hours. Trigger phrases. "PPC campaign",
+  "sponsored products", "campaign structure", "set bids", "audit my ads", "fix
+  my ACoS", "auto and exact campaigns", "dayparting", "bid scheduling", "ad
+  schedule", "time of day bidding", "peak hours", "budget by hour". Works with
+  zero tools. the user provides margins, keywords, or a search term report.
 metadata:
   author: Jay GPT Pro
   library: amazon-pro-skills
@@ -21,7 +26,8 @@ metadata:
 Sponsored Products is the engine of most Amazon ad accounts. Built right, it is a
 funnel that discovers keywords and then harvests them profitably. Built wrong, it is
 one giant auto campaign quietly losing money. This skill builds the funnel or audits
-the one you have.
+the one you have, and adds dayparting as an advanced layer once the structure is
+sound and the data is thick enough to justify it.
 
 ## When to use this
 
@@ -140,9 +146,78 @@ bid against itself.
 
 ---
 
+## Advanced. Dayparting
+
+Once the funnel is built and a healthy data stream exists, the next lever is
+dayparting. shifting bids and budgets toward the hours that convert and away from
+the hours that drain. This is an optimization on top of the funnel, not a
+substitute for it.
+
+### Data-quality gate
+
+Before doing any of this, the account must clear two bars. **At least 4 weeks of
+hour-and-day performance data** and **enough daily spend that hour-level slices have
+meaningful click volume** (rule of thumb. if a typical hour has under 5 clicks across
+the data window, treat it as noise). Below that, dayparting is acting on noise.
+skip it, fix structure and bids first, come back when the data is thick enough.
+
+If only day-of-week data is reliable, daypart by day, not hour. group thin hours
+into wider windows (morning, afternoon, evening, overnight) until each window has
+enough clicks to trust.
+
+### The Hour Value Map
+
+Dayparting is built from the account's own hour-by-day conversion, not from
+intuition.
+
+1. **Score every time block.** For each hour, or each hour-and-weekday block,
+   compute conversion rate and ACoS. Rank blocks into three tiers:
+   - **Prime.** Conversion above the daily average and ACoS at or below target.
+   - **Standard.** Around the daily average.
+   - **Drain.** Conversion well below average or ACoS far above target.
+
+2. **Assign a bid posture per tier.**
+   - Prime: bid up, plus 15 to 30 percent. this is where budget should land.
+   - Standard: baseline bid.
+   - Drain: bid down 30 to 50 percent, or pause entirely.
+
+3. **Protect the budget for Prime.** The point of cutting Drain hours is so the
+   daily budget survives until the Prime hours arrive. A budget that empties at noon
+   never reaches the evening peak. reallocate, do not just cut.
+
+### Dayparting step by step
+
+1. Confirm the data-quality gate (4+ weeks, sufficient hourly clicks).
+2. Score every block (or window) into Prime, Standard, Drain.
+3. Build the bid-adjustment schedule.
+4. Reallocate the freed budget into Prime. net spend can stay flat while results
+   improve.
+5. Set a monthly re-score cadence. dayparting drifts with seasons and promotions.
+
+### Dayparting worked example
+
+A storefront product with 6 weeks of data. Overnight 0 to 6 AM converts at one
+third the daily average with ACoS double the target. Evening 6 to 10 PM converts
+well above average at target ACoS. Schedule: pause or cut overnight 40 percent.
+raise evening bids 25 percent. The daily budget no longer drains before the
+evening peak. net spend roughly flat, orders up, ACoS down.
+
+### Dayparting common mistakes
+
+- **Dayparting too early.** Acting on a few days of data, or on hour buckets with
+  3 clicks each. that is hunch-driven, not data-driven.
+- **Dayparting on a hunch.** "Everyone shops at night" is not this account's data.
+- **Cutting without reallocating.** Cutting Drain hours and pocketing the budget,
+  instead of moving it to Prime where it earns more.
+- **Set and forget.** A schedule built in Q1 is wrong by Q4. re-score monthly.
+- **Ignoring day of week.** Weekends and weekdays often convert differently. a
+  day-of-week layer matters as much as the hour layer.
+
+---
+
 ## Built by Jay GPT Pro
 
-Part of **Amazon Pro Skills**. 50 production-grade skills for serious Amazon sellers.
+Part of **Amazon Pro Skills**. Production-grade skills for serious Amazon sellers.
 Free and open. Built by Jay Margaliot.
 
 I share a new AI play for Amazon sellers every week, free, in my WhatsApp group.

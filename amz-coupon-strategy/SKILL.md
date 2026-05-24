@@ -52,7 +52,12 @@ Three decisions, in order. Get them in this order or the coupon loses money.
 ### 3. The margin floor
 
 Compute the post-coupon contribution: price, minus coupon, minus referral fee, minus
-FBA fee, minus unit cost. Amazon also charges a redemption fee per redeemed coupon (currently 0.60 USD).
+FBA fee, minus unit cost. Amazon also charges a per-redemption coupon fee. that fee
+is on the 2026 redemption fee tier, which Amazon adjusts periodically. before
+launching, verify the current per-redemption rate in the Seller Central coupon
+dashboard and plug that number into the math. do not run the math on a remembered
+or stale rate.
+
 If the post-coupon contribution is at or below zero, the coupon is a loss machine.
 For launch you may accept a thin or zero margin deliberately. for an evergreen coupon
 you may not.
@@ -74,7 +79,8 @@ more). A coupon below the minimum will not run.
    shopper at this price point.
 
 4. **Run the margin math.** Post-coupon contribution equals price minus coupon minus
-   referral fee minus FBA fee minus unit cost minus the per-redemption fee. State the
+   referral fee minus FBA fee minus unit cost minus the current per-redemption fee
+   (2026 redemption fee tier, verify in the dashboard before launching). State the
    number.
 
 5. **Decide go or no-go.** If contribution is positive, run it. If zero or negative,
@@ -109,9 +115,10 @@ Product at 45 USD, unit cost 14, referral fee 15 percent, FBA fee 6. Goal: conve
 lift on a stalled listing.
 
 Depth 12 percent, 5.40 USD off. Format: percentage. at 45 USD, "12% off" reads
-cleaner than "$5 off" even though the math is identical. Margin math: 45 minus 5.40 minus 6.75
-referral minus 6 FBA minus 14 cost minus a small redemption fee leaves roughly 12.50
-contribution. Positive. Run it, budget capped at a defined dollar amount.
+cleaner than "$5 off" even though the math is identical. Margin math: 45 minus 5.40
+minus 6.75 referral minus 6 FBA minus 14 cost minus the current per-redemption fee
+(pull from the dashboard, 2026 tier) leaves roughly 12 USD contribution. Positive.
+Run it, budget capped at a defined dollar amount.
 
 ## Quality check
 

@@ -1,13 +1,17 @@
 ---
 name: amz-product-research
 description: >-
-  Research and validate an Amazon product opportunity end to end. Assesses
-  demand, competition, profit potential, and entry barriers, and returns a
-  go/no-go with the reasoning. Use when a user asks to research a product, find
-  a product to sell, validate a product idea, assess an opportunity, or decide
-  whether to sell something on Amazon. Trigger phrases: "product research",
-  "find a product to sell", "validate this product", "is this a good product",
-  "product opportunity", "should I sell this". Works with zero tools. the user
+  Research and validate an Amazon product opportunity end to end, and evaluate
+  whether the niche around it is winnable. Assesses demand, competition, profit
+  potential, entry barriers, review wall, differentiation room, and seasonality,
+  and returns a go/no-go with the reasoning. Use when a user asks to research a
+  product, find a product to sell, validate a product idea, assess an
+  opportunity, evaluate a niche, find a profitable niche, judge whether a
+  category is worth entering, or compare niches. Trigger phrases: "product
+  research", "find a product to sell", "validate this product", "is this a good
+  product", "product opportunity", "should I sell this", "niche finder",
+  "evaluate this niche", "is this niche worth it", "good niche", "low
+  competition niche", "should I enter". Works with zero tools. the user
   describes the product and what they can observe.
 metadata:
   author: Jay GPT Pro
@@ -19,14 +23,21 @@ metadata:
 
 Product research is the highest-stakes decision a seller makes. everything after it
 is execution on a choice already made. This skill validates a product opportunity
-across the four things that decide it and returns a clear go or no-go.
+across the four things that decide it, and pressure-tests the niche around it,
+returning a clear go or no-go.
+
+Two layers run here. The Opportunity Square is the single-product test. The Niche
+Scorecard is the niche-level test that frames the product. Run the Square when you
+have one product in mind. Add the Scorecard when the question is "is this whole
+category winnable" or when comparing several niches before picking the product.
 
 ## When to use this
 
 - A seller has a product idea and wants it pressure-tested before committing.
-- A seller is comparing several product ideas.
+- A seller is comparing several product ideas or several niches.
 - A seller keeps picking products that look promising and then disappoint.
 - Validating a product before sourcing or sampling.
+- Sizing a niche before committing time to specific products inside it.
 
 ## The framework. The Opportunity Square
 
@@ -59,24 +70,64 @@ high minimum order quantities, oversize fee tiers, fragile or hazardous shipping
 high barrier is sometimes good, it keeps competitors out, but only if the seller can
 clear it themselves.
 
+## Sub-framework. The Niche Scorecard
+
+When the question is whether to enter a whole niche (not just a single ASIN), score
+the niche on six gates. Two of them are pass-or-fail. fail either and the niche is
+avoid, regardless of the rest.
+
+| Gate | What to look for | Weight |
+|------|------------------|--------|
+| Demand | Steady search volume and sales across the top listings | Pass/fail |
+| Margin headroom | Selling price leaves real margin after fees and ads | Pass/fail |
+| Competition depth | How many entrenched sellers, and how strong | Scored |
+| Review barrier | Review counts of the top listings. the wall a new entrant climbs | Scored |
+| Differentiation room | Are the top listings beatable, or already excellent | Scored |
+| Seasonality and risk | Year-round demand, no patent, brand, or compliance trap | Scored |
+
+**Demand** and **margin headroom** are the pass-or-fail gates. No demand, nothing to
+win. No margin, winning does not pay. Only score the rest if both pass.
+
+### Reading the scored gates
+
+- **Competition depth.** A page-one of 10 strong brands is a hard niche. a page-one
+  with weak listings and tired images is an opening.
+- **Review barrier.** If the top listings have 200 to 800 reviews, a new entrant can
+  climb in. If they have 5,000-plus, the review wall alone can take a year.
+- **Differentiation room.** Read the top listings' reviews. recurring complaints are
+  the room to differentiate. If buyers are already happy, there is no opening.
+- **Seasonality and risk.** A niche that sells only in December is a different
+  business. a niche full of patented designs or one dominant brand is a trap.
+
+How the two layers relate. The Square asks "is this specific product the right bet."
+The Scorecard asks "is the surrounding niche worth fighting in at all." A product can
+look strong in the Square and still sit inside a brutal niche, in which case the
+verdict should be Investigate at minimum.
+
 ## Step by step
 
 1. **Collect inputs.** The product idea, category, typical price, what the user can
    observe about the top listings (reviews, ratings, image quality, complaints),
-   rough costs, and any known patents, gating, or compliance issues.
+   rough costs, any known patents, gating, or compliance issues, and any seasonality
+   or brand concentration signals.
 
-2. **Score each corner.** Strong, mixed, or weak, each backed by evidence.
+2. **If the question is niche-level, run the Scorecard first.** Pass-or-fail gates
+   before the scored ones. A failed gate ends the analysis with Avoid.
 
-3. **Run the profit math** properly. landed cost, full fee stack, returns, storage,
+3. **Score each corner of the Square.** Strong, mixed, or weak, each backed by
+   evidence.
+
+4. **Run the profit math** properly. landed cost, full fee stack, returns, storage,
    launch ads. Do not let a guess stand in for the calculation.
 
-4. **Find the angle.** If this is a go, state the specific reason a new entrant wins:
+5. **Find the angle.** If this is a go, state the specific reason a new entrant wins:
    an unmet complaint, a weak incumbent, a price or quality gap.
 
-5. **Verdict.** Go (at least three strong corners and a real angle), Investigate
-   (mixed, name what data would settle it), or No-go (two weak corners or no angle).
+6. **Verdict.** Go (at least three strong corners and a real angle, niche not Avoid),
+   Investigate (mixed, name what data would settle it), or No-go (two weak corners,
+   no angle, or niche-level Avoid).
 
-6. **Run the quality check**, then deliver.
+7. **Run the quality check**, then deliver.
 
 ## Output format
 
@@ -88,6 +139,14 @@ Demand: [strong/mixed/weak] . [evidence]
 Competition: [strong/mixed/weak] . [evidence]
 Profit: [strong/mixed/weak] . [the net margin number]
 Barrier to entry: [strong/mixed/weak] . [evidence]
+
+### Niche Scorecard (if niche-level)
+Demand gate: [pass/fail] . [evidence]
+Margin headroom gate: [pass/fail] . [evidence]
+Competition depth: [score] . [notes]
+Review barrier: [score] . [notes]
+Differentiation room: [score] . [notes]
+Seasonality and risk: [score] . [notes]
 
 ### The angle
 [the specific way to win, or "no clear angle"]
@@ -108,14 +167,21 @@ the listings are generic and the images are weak. Profit: weak, at 14 USD after 
 fee stack, landed cost, and launch ads the net margin is thin. Barrier: low, easy to
 source, which also means easy for others.
 
-Verdict: No-go as-is. Two weak-leaning corners, profit and barrier, and a low-price
-product where ads eat the margin. The angle (better images, better listing) is real
-but cannot fix a structurally thin margin. Investigate a higher-priced, clearly
-premium version that lifts the profit corner before committing.
+Niche Scorecard: demand passes, margin headroom borderline-fail at this price point,
+review barrier high (top listings 3k-6k reviews), differentiation room real
+(recurring complaints about stretch tearing).
+
+Verdict: No-go as-is. Two weak-leaning corners, profit and barrier, a borderline
+margin gate, and a low-price product where ads eat the margin. The angle (better
+images, better listing, non-tearing version) is real but cannot fix a structurally
+thin margin. Investigate a higher-priced, clearly premium version that lifts the
+profit corner before committing.
 
 ## Quality check
 
-- All four corners are scored with evidence, not asserted.
+- All four corners of the Square are scored with evidence, not asserted.
+- If niche-level, the Scorecard pass-or-fail gates were checked first and a failed
+  gate produced Avoid.
 - The profit corner uses a real calculation through the full fee stack, not a guess.
 - A product with two weak corners is a no-go, and the verdict says so.
 - A go verdict names a specific, concrete angle to win.
@@ -130,13 +196,17 @@ premium version that lifts the profit corner before committing.
 - **Ignoring the trend.** Today's demand looks fine while the category is sliding.
 - **No angle.** Entering a niche of excellent listings with happy buyers and nothing
   to take.
+- **Falling for demand alone at the niche level.** High search volume in a niche with
+  no margin or a 10,000-review wall is a trap, not an opportunity.
+- **Skipping the risk scan.** Walking into a patented design or a single-brand-locked
+  category.
 - **Confirmation bias.** Researching to justify a product the seller already chose.
 
 ---
 
 ## Built by Jay GPT Pro
 
-Part of **Amazon Pro Skills**. 50 production-grade skills for serious Amazon sellers.
+Part of **Amazon Pro Skills**. Production-grade skills for serious Amazon sellers.
 Free and open. Built by Jay Margaliot.
 
 I share a new AI play for Amazon sellers every week, free, in my WhatsApp group.

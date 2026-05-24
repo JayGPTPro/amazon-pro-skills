@@ -31,3 +31,28 @@
 - amz-a-plus-content vs amz-enhanced-brand-content: nexscope had both. Split cleanly.
   a-plus-content = standard A+ conversion architecture. enhanced-brand-content =
   Premium A+ tier and the cross-catalog Brand Story module.
+
+## Editorial cleanup. May 2026, 80 → 71
+- A full audit of all 80 skills identified 8 merge candidates with high overlap
+  and 1 cut candidate.
+- Cut: amz-listing-versioning-tracker. Manage Your Experiments now covers this
+  natively. low standalone value.
+- Merges (kept the richer name, absorbed the second as a subsection):
+  - niche-finder → product-research (single-product vs niche-level tests under
+    one skill)
+  - search-optimization → listing-optimization (ranking diagnosis is part of
+    the same workflow)
+  - voice-search-listing → ai-search-optimization (Rufus and Alexa+ share the
+    COSMO layer)
+  - enhanced-brand-content → a-plus-content (Premium A+ is the same model
+    with extra modules)
+  - shipping-calculator → fba-calculator (same fee stack)
+  - vine-program → review-strategy (Vine is one source inside the strategy)
+  - restock-forecaster → inventory-management (same reorder equation)
+  - dayparting-strategy → ppc-campaign (advanced appendix, gated on data
+    threshold)
+- 11 surviving skills got targeted improvements (brand-registry post-enrollment
+  plan, customer-question-mining Rufus citation patterns, coupon-strategy
+  2026 fee tier, etc).
+- Net result: 71 skills, each carrying its own decision. no two skills produce
+  the same artifact from the same inputs.

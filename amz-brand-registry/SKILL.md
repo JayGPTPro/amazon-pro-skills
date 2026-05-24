@@ -67,6 +67,40 @@ Once approved, run this checklist. each item is a tool most enrolled sellers ign
   invitation-only or eligibility-gated, not automatic with Brand Registry.
 - **Virtual Bundles** and **A/B testing** through Manage Your Experiments.
 
+### The 90-day "Use It" plan
+
+Most sellers enroll and then never adopt the toolset because no schedule exists.
+This is the schedule. Each window has one job. do not skip ahead.
+
+**Week 1-2. Turn on Brand Analytics.** Open Search Query Performance, set up the
+saved searches for the brand's top 20 keywords, and pull the first Market Basket
+Analysis report. The goal is not insight yet, it is establishing the baseline. The
+data refreshes weekly. start the clock now.
+
+**Week 3-4. Launch the first Sponsored Brands campaign.** Use the brand's
+strongest mid-tail and long-tail keywords from the existing PPC harvest campaign
+(see amz-ppc-campaign). Headline Search or Video creative, routed to a product
+collection or the brand's lead ASIN. Budget at 20-30% of the Sponsored Products
+budget. This earns the brand the top-of-search real estate that Brand Registry
+unlocked.
+
+**Week 5-8. Enable Brand Story and enroll the first Vine units.** Build the Brand
+Story carousel (see amz-a-plus-content). it lifts every listing in the brand in
+one move. In parallel, enroll the launch SKUs in Vine if review counts are thin
+(see amz-review-strategy). These two compound. the Brand Story drives cross-sell,
+Vine builds the review wall that lets the cross-sell convert.
+
+**Week 9-12. File the first violation case.** By now the audit has surfaced
+something. an unauthorized seller on the Buy Box, a counterfeit, a hijacker, a
+listing variation abuse. File one Report a Violation case end to end so the
+brand's team learns the process. The skill is not in the first case won, it is in
+having the process documented so the second one takes an hour, not a week.
+
+By day 90 the brand has data flowing, paid top-of-search running, the Brand Story
+lifting every listing, Vine seeding reviews, and a violation-response process. that
+is the actual ROI of Brand Registry. enrollment without this plan is enrollment
+without payoff.
+
 ## Step by step
 
 1. **Diagnose the phase.** Is the seller pre-enrollment or already enrolled?
