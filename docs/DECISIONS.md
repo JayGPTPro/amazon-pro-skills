@@ -73,3 +73,31 @@ Cut (7):
 - amz-exit-valuation-prep. One moment in a brand's life
 
 Result: The Expansion category is gone. Strategic and lifecycle has one skill.
+
+## Round 3 additions. May 2026, 64 → 74
+After cleanup the library was at 64. A community-research pass (Reddit
+r/FulfillmentByAmazon, GitHub awesome-claude-skills lists, Amazon seller
+blogs, 2026 policy updates) surfaced 15 strong candidates. Top 10 built.
+
+The selection criterion was "loved skill patterns": decision triggers with
+hard numbers, bulk-file outputs you literally upload to Seller Central,
+high-urgency moments (suspension, Q4, stockout, tax season), and skills
+tied to specific 2026 policy changes (Returns Processing Fee, AI image
+disclosure, manufacturing-cost reimbursement basis).
+
+The 10 added:
+- amz-cogs-tax-pack
+- amz-vine-roi-decision
+- amz-ip-complaint-retraction-kit
+- amz-search-term-report-miner
+- amz-q4-restock-war-room
+- amz-ai-image-policy-compliance
+- amz-listing-indexation-audit
+- amz-supplier-sample-evaluation
+- amz-stockout-recovery-plan
+- amz-returns-root-cause-loop
+
+Library now 74. Categories: Operations & account (9), Promotion & growth (8),
+Listing & content (8), Account health & compliance defense (8), Research (6),
+AI search (5), Advertising (5), Reviews (5), Financial recovery (6),
+Logistics advanced (5), Pricing (4), Ads advanced (4), Strategic (1).

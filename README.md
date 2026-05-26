@@ -1,6 +1,6 @@
 # Amazon Pro Skills
 
-64 production-grade Claude Code skills for serious Amazon sellers. Free and open.
+74 production-grade Claude Code skills for serious Amazon sellers. Free and open.
 Built by Jay Margaliot.
 
 Every skill is a real framework, not a thin wrapper. Each one carries a named model,
@@ -8,7 +8,7 @@ a step-by-step process with decision logic, an output template, a worked example
 self-check, and a list of the mistakes to avoid. Each works standalone. no MCP, no
 API keys, no external tools. You bring your own data, the skill does the thinking.
 
-## Install all 64 skills in one line
+## Install all 74 skills in one line
 
 ```
 npx skills add JayGPTPro/amazon-pro-skills -g
@@ -28,22 +28,24 @@ ls ~/.agents/skills/ | grep amz-
 Get-ChildItem "$env:USERPROFILE\.agents\skills" | Select-String amz-
 ```
 
-## The 64 skills
+## The 74 skills
 
 **Research and selection** (6)
 amz-product-research, amz-trending-products, amz-sales-estimator,
 amz-competitor-analysis, amz-private-label, amz-wholesale-sourcing
 
-**Listing and content** (7)
+**Listing and content** (8)
 amz-listing-optimization, amz-keyword-research, amz-backend-keywords,
-amz-a-plus-content, amz-listing-images, amz-product-photography, amz-variation-strategy
+amz-a-plus-content, amz-listing-images, amz-product-photography, amz-variation-strategy,
+amz-ai-image-policy-compliance
 
-**AI search and modern SEO** (4)
+**AI search and modern SEO** (5)
 amz-ai-search-optimization, amz-attributes-completer, amz-aeo-external-content-plan,
-amz-customer-question-mining
+amz-customer-question-mining, amz-listing-indexation-audit
 
-**Advertising** (4)
-amz-advertising-strategy, amz-ppc-campaign, amz-negative-keywords, amz-display-ads
+**Advertising** (5)
+amz-advertising-strategy, amz-ppc-campaign, amz-negative-keywords, amz-display-ads,
+amz-search-term-report-miner
 
 **Advertising and growth (advanced)** (4)
 amz-tacos-diagnostic, amz-attribution-campaign-planner, amz-creator-connections-brief,
@@ -52,29 +54,33 @@ amz-sponsored-brands-video
 **Pricing and profit** (4)
 amz-fba-calculator, amz-profit-analyzer, amz-tariff-calculator, amz-buy-box
 
-**Financial recovery and reconciliation** (5)
+**Financial recovery and reconciliation** (6)
 amz-reimbursement-audit, amz-cash-flow-forecaster-dd7, amz-chargeback-defense,
-amz-fee-audit, amz-1099k-reconciliation
+amz-fee-audit, amz-1099k-reconciliation, amz-cogs-tax-pack
 
-**Promotion and growth** (7)
+**Promotion and growth** (8)
 amz-coupon-strategy, amz-deal-finder, amz-brand-tailored-promotions,
-amz-subscribe-save, amz-product-bundling, amz-seasonal-planning, amz-launch-runway
+amz-subscribe-save, amz-product-bundling, amz-seasonal-planning, amz-launch-runway,
+amz-q4-restock-war-room
 
-**Reviews and analytics** (4)
-amz-review-analyzer, amz-review-strategy, amz-brand-analytics, amz-rank-tracker
+**Reviews and analytics** (5)
+amz-review-analyzer, amz-review-strategy, amz-brand-analytics, amz-rank-tracker,
+amz-vine-roi-decision
 
-**Operations and account** (8)
+**Operations and account** (9)
 amz-inventory-management, amz-fba-prep, amz-return-reduction,
 amz-brand-registry, amz-category-ungating, amz-product-compliance,
-amz-suspension-appeal, amz-storefront-design
+amz-suspension-appeal, amz-storefront-design, amz-stockout-recovery-plan
 
-**Account health and compliance defense** (6)
+**Account health and compliance defense** (8)
 amz-account-health-triage, amz-ipi-recovery-plan, amz-hijacker-removal,
-amz-listing-suppression-recovery, amz-category-renoding-fix, amz-buyer-abuse-defense
+amz-listing-suppression-recovery, amz-category-renoding-fix, amz-buyer-abuse-defense,
+amz-ip-complaint-retraction-kit, amz-returns-root-cause-loop
 
-**Inventory, logistics, sourcing (advanced)** (4)
+**Inventory, logistics, sourcing (advanced)** (5)
 amz-removal-vs-storage-calculator, amz-inbound-placement-optimizer,
-amz-sourcing-diversification, amz-supplier-negotiation-script
+amz-sourcing-diversification, amz-supplier-negotiation-script,
+amz-supplier-sample-evaluation
 
 **Strategic and lifecycle** (1)
 amz-pricing-war-defense
