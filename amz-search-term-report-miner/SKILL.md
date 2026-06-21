@@ -40,9 +40,15 @@ exactly one bucket based on click and order thresholds.
 | 1. Negative Exact | Clicks >= 10, Orders = 0, ACoS = blank | Add as Negative Exact at campaign |
 | 2. Negative Phrase | 3+ terms share root, combined clicks >= 25, orders <= 1 | Add root as Negative Phrase |
 | 3. Exact Harvest | Orders >= 2, ACoS < target ACoS, term not already exact | Move to new exact-match campaign |
-| 4. Hero Scale | Impressions >= 1000, CVR >= 12%, ACoS < target | Increase budget + bid +20% |
+| 4. Hero Scale | Impressions >= 1000, CVR well above your account average, ACoS < target | Increase budget + bid +20% |
 
 Anything else: leave alone.
+
+A note on the Hero gate: there is no universal "good" CVR. It varies hugely by
+category, price, and product. Do not hardcode a fixed number like 12%. Instead,
+compare each term to YOUR account or category baseline. A practical hero gate is
+roughly 1.5x to 2x your average CVR for that product. Compute your baseline
+first, then set the gate from it.
 
 ## Step by step
 
@@ -63,7 +69,8 @@ Anything else: leave alone.
    not already an exact keyword in any campaign. Format as new exact-match
    campaign rows.
 
-6. **Apply Bucket 4 filter.** Impressions >= 1000 AND CVR >= 12% AND ACoS <
+6. **Apply Bucket 4 filter.** Impressions >= 1000 AND CVR well above your
+   account average (roughly 1.5-2x your baseline for that product) AND ACoS <
    target. These are scale candidates. Generate bid +20% rows.
 
 7. **Build the Bulk Operations file.** 4 sheets, one per bucket. Use Amazon
@@ -100,7 +107,11 @@ Campaign | Ad Group | Keyword | Old Bid | New Bid
 [rows]
 ```
 
-## Worked example
+## Worked example (illustrative)
+
+The figures below are an example to show how the buckets shake out, not a
+benchmark to expect. Your term counts, CVR, ROAS, and savings depend entirely
+on your account.
 
 Account: home goods seller, 42 SKUs, $8,400/month PPC spend. 60-day STR has
 38,200 unique search terms. After parsing:
@@ -111,15 +122,18 @@ or $924/month immediately saved.
 Bucket 2: 12 phrase roots like "cat", "for dogs", "wholesale". 412 clicks, 8
 orders. Adding negative phrases blocks 200+ wasted clicks/month.
 
-Bucket 3: 67 exact-match harvest candidates. Average CVR 18%, average ACoS 19%.
-Moving to exact campaigns at 1.2x bid projects 134 incremental orders/month
-at $9 ROAS.
+Bucket 3: 67 exact-match harvest candidates. In this example the harvested
+terms convert well above the account average and move to exact campaigns at
+1.2x bid. The incremental-orders and ROAS figures you would model here are
+account-specific. do not assume a fixed order count or a particular ROAS. run
+the projection off your own term-level CVR and AOV.
 
-Bucket 4: 14 hero terms. +20% bid moves them from page 1 position 4-6 to top
-of search.
+Bucket 4: 14 hero terms. +20% bid aims to move them from mid page 1 toward the
+top of search.
 
-Total projected impact: $924/month saved + 134 incremental orders = roughly
-$2,800/month profit lift.
+Total projected impact in this scenario combines the negative-keyword savings
+with the harvested-term upside. Both are illustrative. compute your own numbers
+from your account data rather than carrying these over.
 
 ## Quality check
 
@@ -135,7 +149,7 @@ $2,800/month profit lift.
 - **No target ACoS.** Bucket 3 and 4 lose their gate, you scale unprofitable terms.
 - **Adding negative phrases without checking brand terms.** Easy to accidentally negative-match your own brand variant.
 - **Harvesting terms that already exist as exact.** Creates internal bid wars.
-- **Skipping Bucket 4.** Most sellers focus on cutting waste and miss the scale upside, which is 2-3x larger.
+- **Skipping Bucket 4.** Most sellers focus on cutting waste and miss the scale upside, which is often the larger lever.
 
 ---
 

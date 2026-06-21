@@ -25,7 +25,8 @@ profile to alternative origins. This skill builds the migration plan.
 ## When to use this
 
 - Heavy or full China exposure and tariff-policy risk is real.
-- A specific Section 301 or country-specific tariff is eroding margin.
+- Stacked duties (Section 301, reciprocal or other country-specific tariffs,
+  antidumping where relevant) are eroding margin.
 - The seller wants a backup supplier without a full move.
 - Planning a new SKU and deciding where to source from the start.
 
@@ -36,7 +37,7 @@ on five factors.
 
 | Factor | What to check |
 |--------|---------------|
-| Duty + tariff | HS code rate, additional country-specific tariffs |
+| Duty + tariff | HS code base rate plus all applicable add-on duties for that origin (Section 301, reciprocal or other country-specific tariffs, antidumping where relevant). Check the current rate, the regime shifts |
 | Unit cost | Factory price for comparable quality |
 | Lead time | Production + ocean/air freight + customs |
 | MOQ | Often higher in alternative origins still ramping |
@@ -98,14 +99,18 @@ Phase 3 (weeks 17+): Dual-source split [%] / [%]
 
 ## Worked example
 
-A home-goods SKU sourced from China at 4.20 USD landed, with 25% Section 301 tariff
-adding most of the gap from the 2.80 factory price. Vietnam alternative: factory
-price 3.20, no Section 301, landed 4.40. Cost slightly higher but tariff exposure
-eliminated. Migration: order 200 units sample from a vetted Vietnam supplier (6
-weeks), test quality and lead-time reliability. If clean, place a 5,000 unit
-parallel order while continuing China for the bulk. After 3 months, split production
-40 Vietnam / 60 China for resilience. The seller is now insulated from a Section
-301 hike on this SKU, at a small landed-cost premium that is manageable.
+A home-goods SKU sourced from China at 4.20 USD landed, where the stacked
+China-origin duties (base duty plus the add-on tariffs that apply to this HS
+code and origin) add most of the gap from the 2.80 factory price. Vietnam
+alternative: factory price 3.20, a different and currently lower duty stack for
+this origin, landed 4.40. Cost slightly higher but the China-specific tariff
+exposure is removed. Migration: order 200 units sample from a vetted Vietnam
+supplier (6 weeks), test quality and lead-time reliability. If clean, place a
+5,000 unit parallel order while continuing China for the bulk. After 3 months,
+split production 40 Vietnam / 60 China for resilience. The seller is now
+insulated from a tariff hike on the China-origin duty stack for this SKU, at a
+small landed-cost premium that is manageable. Verify the current duty stack for
+each origin before committing. the rates shift.
 
 ## Quality check
 

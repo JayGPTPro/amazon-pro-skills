@@ -58,13 +58,16 @@ If FBA cover drops below 14 days by Nov 20, activate FBM:
 
 ### Peak velocity multipliers (vs Q3 baseline)
 
+Event dates move every year. Confirm the current-year dates in Seller Central
+and map each multiplier to the right week.
+
 | Event | Velocity multiplier |
 |---|---|
-| Prime Big Deal Days (Oct 7-8) | 1.8x baseline for that week |
+| Prime Big Deal Days (early-to-mid October, confirm yearly) | 1.8x baseline for that week |
 | Black Friday week | 2.5-3.5x baseline |
 | Cyber Monday | 2.0x baseline |
-| Dec 1-15 (Christmas push) | 1.6x baseline |
-| Dec 16-23 (last-mile rush) | 0.9x (Amazon throttles non-Prime shipping) |
+| Early December (Christmas push) | 1.6x baseline |
+| Late December (last-mile rush) | 0.9x (shipping cutoffs and carrier capacity throttle late-arriving orders) |
 
 ## Step by step
 
@@ -78,10 +81,11 @@ If FBA cover drops below 14 days by Nov 20, activate FBM:
 
 4. **Calculate inbound delay buffer per month.** Add to lead time per the table.
 
-5. **Build the reorder calendar.** Place PO dates so units land at FBA by:
-   - Sept 30 for Prime Big Deal Days coverage
-   - Nov 1 for Black Friday coverage
-   - Nov 25 for early-December coverage
+5. **Build the reorder calendar.** Confirm the current-year event dates first,
+   then place PO dates so units land at FBA with cover ahead of each event:
+   - about 1 week before the fall Prime event (early-to-mid October, confirm yearly)
+   - about 3 weeks before Black Friday
+   - by late November for early-December coverage
 
 6. **Set the FBM trigger thresholds.** For each SKU, calculate the FBA-cover
    day count that triggers FBM activation. Pre-stage FBM inventory by Nov 1.

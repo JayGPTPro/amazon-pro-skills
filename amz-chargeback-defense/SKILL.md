@@ -1,7 +1,7 @@
 ---
 name: amz-chargeback-defense
 description: >-
-  Defend Amazon chargebacks and A-to-z claims within the 7-day response window.
+  Defend Amazon chargebacks and A-to-z claims within the 3-day A-to-z response window.
   Identifies the claim type, builds the evidence packet (tracking, signature,
   messaging history, fulfillment proof), and writes the response narrative
   Amazon's case reviewers read for. Use when a user asks about chargebacks,
@@ -61,10 +61,11 @@ Send the wrong evidence and the case is lost even if the seller is right.
 4. **Write the response narrative.** Factual, dated, points to the evidence by
    exhibit. No emotion, no excuses, no buyer-blame. 3 to 5 short paragraphs.
 
-5. **Submit before the deadline.** A-to-z claims give the seller a 72-hour (3-day)
-   window to respond. Chargebacks follow the credit-card network timeline, typically
-   7 to 11 days after notification. Submit well before either deadline. extensions
-   are not granted.
+5. **Submit before the deadline.** An A-to-z claim gives the seller about 3 calendar
+   days (roughly 72 hours) to respond to Amazon's request for information. confirm the
+   exact countdown on the case, since Amazon has shown some variation here. A card-network
+   chargeback is a separate process on the issuer's representment timeline, often a week
+   or more after notification. Submit well before either deadline. extensions are not granted.
 
 6. **Note the ODR impact.** An A-to-z lost without response counts against the
    seller's Order Defect Rate, even after refund. Defending matters for the metric,
@@ -119,7 +120,7 @@ plus a fee.
 - **Wrong evidence type.** Sending listing screenshots on an INR claim, or carrier
   tracking on a SNAD claim.
 - **Emotional response.** A pleading or accusatory narrative gets dismissed.
-- **Missing the deadline.** 7 days, often less, no extensions.
+- **Missing the deadline.** The A-to-z window is about 3 calendar days, no extensions. confirm the exact countdown shown on the case.
 - **No pattern review.** Fighting each claim in isolation while the same root cause
   keeps producing more.
 

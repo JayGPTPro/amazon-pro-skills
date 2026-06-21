@@ -18,17 +18,21 @@ metadata:
 
 # Reimbursement Audit
 
-In March 2025 Amazon changed how it values reimbursements: instead of selling-price
-basis, it pays manufacturing cost basis unless the seller submits their own cost
-evidence. Sellers who do not submit cost docs lose up to 60 percent of what they
-used to recover. This skill builds the claim packet that actually gets paid.
+Amazon changed how it values reimbursements: for inventory lost or damaged in a
+fulfillment center, it now pays on your product manufacturing (sourcing) cost rather
+than selling price, and you set that cost in Seller Central. Amazon still runs
+automated reconciliation and proactively reimburses many warehouse lost and damaged
+cases on its own. manual claims are for the cases its system did not catch, or closed
+without paying, and for getting the cost basis right. This skill builds the claim
+packet that actually gets paid for the cases that fall through.
 
 ## When to use this
 
-- Units lost or damaged in the warehouse and never reimbursed.
+- Units lost or damaged in the warehouse that automated reconciliation never
+  reimbursed, or reimbursed for less than expected.
 - A refund processed for a customer but the unit was not returned, or returned damaged.
-- Old reimbursement habits that no longer match the 2025 policy.
-- Multiple claim-eligible events sitting past the 60-day window risk.
+- Old reimbursement habits that no longer match the current policy.
+- Multiple claim-eligible events sitting past the filing-window risk.
 
 ## The framework. The Four Claim Cases
 
@@ -43,8 +47,11 @@ higher payout.
 | Customer return | Refund issued, no return or damaged return | Returns report, Reimbursements report | order ID, refund date, return status, cost |
 | Fee error | Wrong fulfillment fee or referral fee | Payments report | the wrong charge, the right charge, the delta |
 
-For every case, build cost basis once: a supplier invoice plus freight plus duty,
-divided to per-unit. Same number for every future claim on that SKU.
+For every case, build cost basis once: the manufacturing (sourcing) cost per unit from
+the supplier invoice. Amazon defines manufacturing cost as your cost to source the
+product and excludes shipping, handling, and customs duties. so use the per-unit
+invoice price, not the fully landed cost. Same number for every future claim on that
+SKU, set on the Manage Your Sourcing Cost page in Seller Central.
 
 ## The 60-day window
 
@@ -55,11 +62,13 @@ and file those first.
 ## Step by step
 
 1. **Collect inputs.** The Reconciliation, Inventory Adjustments, Returns, and
-   Payments reports the user can paste. Plus a supplier invoice and freight data to
-   compute manufacturing cost per unit for the SKUs involved.
+   Payments reports the user can paste. Plus a supplier invoice to read the
+   manufacturing (sourcing) cost per unit for the SKUs involved.
 
-2. **Compute cost basis per SKU.** Per-unit landed cost from supplier invoice and
-   freight, divided by units. This is the number Amazon now wants.
+2. **Compute cost basis per SKU.** Per-unit manufacturing (sourcing) cost from the
+   supplier invoice. exclude freight, duty, and handling, since Amazon's manufacturing-
+   cost definition leaves them out. This is the number Amazon now wants, set on the
+   Manage Your Sourcing Cost page.
 
 3. **Classify every reimbursable event** into one of the four claim cases.
 
@@ -79,7 +88,7 @@ and file those first.
 ```
 ## Reimbursement Audit. [SKU or catalog]
 
-Cost basis per SKU: [SKU] . [$ per unit] . source: [invoice + freight calc]
+Cost basis per SKU: [SKU] . [$ per unit] . source: [supplier invoice, sourcing cost]
 
 ### Claim packet
 Case 1. [type] . event date . days remaining . units . $ at stake
@@ -100,12 +109,13 @@ Case 1. [type] . event date . days remaining . units . $ at stake
 A seller has 24 units of a 22 USD product lost in an inbound shipment 53 days ago,
 plus 8 refunds where the units never returned, average 31 days ago.
 
-Cost basis: 6.40 per unit from the supplier invoice plus freight. Lost case: 24 units
-x 6.40 = 154 USD owed, filed inside the 60-day window with the cost evidence and the
-shipment ID, on day 53. Customer-return cases: 8 separate cases, filed in priority
-order, average 29 days remaining. The seller had been waiting for Amazon to
-auto-reimburse. that no longer happens under the 2025 policy. without filing with
-cost evidence, the seller would have recovered nothing.
+Cost basis: 6.40 per unit, the manufacturing (sourcing) cost read straight off the
+supplier invoice, freight and duty excluded. Lost case: 24 units x 6.40 = 154 USD owed,
+filed inside the 60-day window with the cost evidence and the shipment ID, on day 53.
+Customer-return cases: 8 separate cases, filed in priority order, average 29 days
+remaining. Amazon's automated reconciliation may have already reimbursed some of these.
+the audit is for the cases it missed or closed without paying, and to make sure the
+sourcing cost is set so the payout is on cost basis rather than a lower default.
 
 ## Quality check
 
@@ -117,8 +127,9 @@ cost evidence, the seller would have recovered nothing.
 
 ## Common mistakes
 
-- **Waiting for Amazon to auto-reimburse.** Under the 2025 policy, many cases are not
-  found unless the seller files them.
+- **Assuming automation catches everything.** Amazon proactively reimburses many
+  warehouse lost and damaged cases, but not all. the ones it misses or closes without
+  paying still need a manual claim inside the window.
 - **Filing without cost evidence.** The default payout dropped sharply. cost basis is
   the difference between recovering 40 cents and 100 cents on the dollar.
 - **Missing the window.** Events past 60 days are lost.

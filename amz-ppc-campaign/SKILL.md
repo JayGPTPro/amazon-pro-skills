@@ -87,11 +87,14 @@ Every bid traces back to margin.
 
 1. Collect the search term report and campaign data: spend, clicks, orders, sales,
    ACoS per term, plus target ACoS.
-2. For each term, decide: raise bid (converts below target ACoS), lower bid (converts
-   above target ACoS but still sells), negate (drains with no sales), or wait (too
-   few clicks).
-3. List the converting Discover and Test terms to graduate to the exact campaign.
-4. Apply negative isolation for every graduated term.
+2. Set the bid action for each term that sells: raise bid (converts below target
+   ACoS), or lower bid (converts above target ACoS but still sells).
+3. Sort the rest into negate, keep-and-graduate, or wait. For the full negate/keep/
+   graduate decision tree (the drain threshold, exact versus phrase negatives, and
+   protecting converting terms from a careless phrase negative), see
+   amz-negative-keywords.
+4. Apply negative isolation for every graduated term, so the funnel does not bid
+   against itself.
 5. Produce a week-by-week action plan.
 
 ## Output format

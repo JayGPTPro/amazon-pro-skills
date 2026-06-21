@@ -68,6 +68,17 @@ against storage cost and cash. A common target is 60 to 90 days of cover. more t
 that risks long-term storage fees and frozen cash, less risks stockouts on any lead-
 time slip.
 
+Running too lean is no longer only a stockout risk. Since April 2024 Amazon charges a
+**low-inventory-level fee** on FBA standard-size units whose historical days of cover
+stay low (the fee looks at both the short-term and long-term days-of-supply figures,
+so chronically thin stock, not a brief dip, is what triggers it). It is a per-unit
+surcharge that stacks on the normal fulfillment fee, which makes a too-tight reorder
+quietly expensive. Treat the exact threshold and per-unit amounts as moving. Amazon
+has adjusted both, so confirm the current numbers and your SKUs' status on the
+Inventory Performance and fee pages in Seller Central. The practical takeaway. keep
+enough days of cover that the fee does not trigger, which usually aligns with the same
+60-to-90-day target the reorder equation already aims for.
+
 ## The 12-week schedule. Days-of-Cover model
 
 The reorder equation tells you when one PO fires. The schedule tells you when the
@@ -87,12 +98,42 @@ the peak begins, not during it.
 
 ## The IPI and FBA capacity limits
 
-Amazon replaced the strict IPI minimum with **FBA capacity limits** in March 2023.
-Capacity is now governed by recent sales, IPI, and forecast demand together, not by a
-hard IPI floor. IPI still matters as one input. it is driven by four levers: low
+In March 2023 Amazon removed the hard IPI minimum that used to gate FBA storage and
+replaced the old storage-volume and restock limits with a single monthly **FBA
+capacity limit** measured in cubic feet. Capacity is now managed through Manage Your
+Inventory Capacity in Seller Central, driven by recent sales, IPI, forecast demand,
+and fulfillment-center availability together, not by a hard IPI floor that blocks
+inbound shipments. IPI still matters as one input into how much capacity Amazon
+grants, and a weak score still tightens the limit. it is driven by four levers: low
 excess inventory, healthy sell-through, fixing stranded inventory, and keeping
 in-stock rate high. Manage all four, and watch the capacity dashboard for the actual
-restock limit on the account.
+limit on the account. Treat any specific IPI target you see quoted online as a moving
+heuristic. confirm the current threshold and your account's status in Seller Central
+rather than assuming a fixed number.
+
+### 30-60-90 day IPI recovery plan
+
+When a low IPI is tightening the capacity limit, recovery is sustained weekly action,
+not a one-time push. Diagnose the single binding lever first (where the most points
+are being lost), then work it on a phased schedule:
+
+- **Days 1 to 7. Diagnose and plan.** Pull the four-lever breakdown from the inventory
+  dashboard. Open Manage Excess Inventory and the Stranded Inventory tool. Identify
+  the binding lever and build the weekly action list around it.
+- **Days 8 to 30. Hit the binding lever.** Remove or liquidate excess, or fix stranded
+  listings, whichever is binding. Weigh removal versus liquidation per SKU, not flat:
+  removal costs a fee but frees capacity, liquidation loses some margin but recovers
+  cash. The score typically responds within 2 to 3 weeks.
+- **Days 31 to 60. Work the secondary levers.** Push sell-through on the slow movers
+  with promotions and ad spend, and repair in-stock rate by fixing the reorder
+  schedule on the SKUs that keep dipping.
+- **Days 61 to 90. Stabilize and use the room.** Weekly review to confirm the score
+  holds and the capacity limit loosened, then plan the restock that uses the recovered
+  capacity. Do not add inventory before the score recovers. more stock while IPI is
+  low worsens the excess metric and tightens the limit further.
+
+IPI updates weekly, so review weekly across the whole 90 days and flag if either the
+score or the capacity limit moves the wrong way.
 
 ## Step by step
 

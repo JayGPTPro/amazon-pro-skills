@@ -22,6 +22,10 @@ Every PPC account leaks money on search terms that click and never buy. Negative
 keywords stop the leak. But a careless negative also blocks a term that converts.
 This skill cuts the waste without cutting a winner.
 
+This is the deep-dive on the negative-keyword decision. Building the campaign
+structure that produces these search terms (auto, broad, exact funnel) lives in
+amz-ppc-campaign.
+
 ## When to use this
 
 - A campaign spends on search terms that clearly do not match the product.
@@ -29,21 +33,23 @@ This skill cuts the waste without cutting a winner.
 - An auto or broad campaign is bringing irrelevant traffic.
 - A seller wants a repeatable rule for what to negate, run on a schedule.
 
-## The framework. The Negative Decision
+## The framework. The Search Term Sieve
 
-Every search term in the report is one of four things. Only two of them become
-negatives.
+Pour every term in the report through the sieve. It sorts each one into exactly one
+of four outcomes, and only two of them fall into the negative bucket. Run the checks
+in order. the first one a term matches is its verdict.
 
-| Term pattern | Verdict |
-|--------------|---------|
-| Spend with zero or near-zero sales, past the cost-of-a-sale threshold | Negate. money drain |
-| Clicks but irrelevant to the product (wrong item, wrong intent) | Negate. it will never convert |
-| Converting at acceptable ACoS | Keep. and graduate it to an exact-match keyword |
-| Too few clicks to judge | Wait. do not negate on noise |
+| # | Gate | Term pattern | Verdict |
+|---|------|--------------|---------|
+| 1 | Drain | Spend past the cost-of-a-sale threshold with zero or near-zero sales | Negate. money drain |
+| 2 | Irrelevant | Clicks but clearly wrong item or wrong intent for the product | Negate. it will never convert |
+| 3 | Winner | Converting at acceptable ACoS | Keep, and graduate it to an exact-match keyword |
+| 4 | Noise | Too few clicks to judge either way | Wait. do not negate on noise |
 
-The drain threshold: a term that has spent more than the cost of one sale (roughly
-1 to 1.5 times your target cost per acquisition) with no sale is a drain. Below that,
-it is still data collection.
+Order matters: check Noise last, so a term is only ever sent to Wait when it has not
+already earned a Negate or a Keep. The drain threshold for gate 1: a term that has
+spent more than the cost of one sale (roughly 1 to 1.5 times your target cost per
+acquisition) with no sale is a drain. Below that, it is still data collection.
 
 ## Exact versus phrase negatives
 
@@ -103,14 +109,18 @@ Re-run this pass: [weekly / biweekly]
 
 A search term report for a stainless steel dog bowl. Target cost per acquisition 6 USD.
 
-- "plastic dog bowl" spent 14 USD, zero sales. Negate. wrong material, will never
-  convert. Negative phrase "plastic" is tempting, but the report has "stainless steel
-  bowl" converting and a phrase negative on a single word is risky here, so negate
-  "plastic dog bowl" as exact plus "plastic" as phrase only after confirming no
-  converting term contains it.
-- "dog water bowl" converting at 4 USD per sale. Keep and graduate to an exact-match
-  keyword.
-- "bowl" with 2 clicks, no data. Wait.
+- "plastic dog bowl" spent 14 USD, zero sales. Gate 1, drain, and gate 2, wrong
+  material. Negate it. The token "plastic" is a whole irrelevant theme, so a phrase
+  negative on "plastic" would be efficient if it is safe. Run the safety check: scan
+  every converting term for the word "plastic". The winners here are "dog water bowl"
+  and "stainless steel bowl", and neither contains "plastic", so the phrase negative
+  cannot block a converter. Verdict: add "plastic" as a negative phrase. It also kills
+  any future "plastic feeding bowl" or "plastic pet dish" before they spend.
+  (Had a converting term contained "plastic", the rule flips: drop the phrase and
+  negate "plastic dog bowl" as negative exact only.)
+- "dog water bowl" converting at 4 USD per sale. Gate 3, winner. Keep and graduate to
+  an exact-match keyword.
+- "bowl" with 2 clicks, no data. Gate 4, noise. Wait.
 
 ## Quality check
 
@@ -135,7 +145,7 @@ A search term report for a stainless steel dog bowl. Target cost per acquisition
 
 ## Built by Jay GPT Pro
 
-Part of **Amazon Pro Skills**. 50 production-grade skills for serious Amazon sellers.
+Part of **Amazon Pro Skills**. Production-grade skills for serious Amazon sellers.
 Free and open. Built by Jay Margaliot.
 
 I share a new AI play for Amazon sellers every week, free, in my WhatsApp group.

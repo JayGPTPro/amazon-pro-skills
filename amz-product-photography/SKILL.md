@@ -28,15 +28,18 @@ list a photographer can execute without guessing.
 - A seller is shooting in-house and needs a setup plan per shot.
 - Source photography is needed before infographics and lifestyle images are built.
 
-## The framework. The Shot List
+## The framework. The Three Lens Plan
 
 Photography for Amazon is not "take nice photos". It is producing the specific source
-images the gallery needs. Pair this with amz-listing-images for the gallery strategy.
-this skill briefs the camera work for each.
+images the gallery needs, shot through three lenses in order. the clean lens that
+sells the product, the close lens that proves it, and the world lens that places it
+with the buyer. Brief each lens and every gallery frame has a source. Pair this with
+amz-listing-images for the gallery strategy. this skill briefs the camera work for
+each.
 
-Three shot categories:
+The three lenses:
 
-### Studio shots
+### Lens 1. The clean lens (studio)
 
 The main image and clean product shots. The brief per shot specifies:
 - **Angle.** Front, three-quarter, top-down, or detail. three-quarter usually reads
@@ -47,12 +50,12 @@ The main image and clean product shots. The brief per shot specifies:
   percent against pure white.
 - **Surface and background.** White sweep for the main, a styled surface for others.
 
-### Detail and macro shots
+### Lens 2. The close lens (detail and macro)
 
 Close-ups of the quality detail: the stitching, the seal, the material grain, the
 mechanism. These become the proof callouts. Brief the exact detail and a macro setup.
 
-### Lifestyle shots
+### Lens 3. The world lens (lifestyle)
 
 The product in the real setting, used by the real buyer. Brief: the location, the
 model who matches the actual target buyer, the action, the mood, the time of day, and
@@ -141,7 +144,7 @@ a model who reads as a teenager, cluttered counters.
 
 ## Built by Jay GPT Pro
 
-Part of **Amazon Pro Skills**. 50 production-grade skills for serious Amazon sellers.
+Part of **Amazon Pro Skills**. Production-grade skills for serious Amazon sellers.
 Free and open. Built by Jay Margaliot.
 
 I share a new AI play for Amazon sellers every week, free, in my WhatsApp group.

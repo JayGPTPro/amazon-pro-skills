@@ -101,3 +101,62 @@ Library now 74. Categories: Operations & account (9), Promotion & growth (8),
 Listing & content (8), Account health & compliance defense (8), Research (6),
 AI search (5), Advertising (5), Reviews (5), Financial recovery (6),
 Logistics advanced (5), Pricing (4), Ads advanced (4), Strategic (1).
+
+## Quality pass, merge, and curation round. June 2026, 74 to 67
+A 6-agent audit scored all 74 skills against the amz-buy-box bar, then an 8-agent
+fix pass applied the findings. The library was already strong (most skills passed).
+the round targeted three things: 2026 factual accuracy, framework naming, and
+duplicate consolidation.
+
+Merges (74 to 72):
+- amz-returns-root-cause-loop into amz-return-reduction. Both clustered returns into
+  the same five root causes. The survivor absorbed the Returns Processing Fee
+  financial angle and got a named model (the Returns Fault Tree).
+- amz-ipi-recovery-plan into amz-inventory-management. The inventory skill already
+  carried the IPI levers. it absorbed the one distinct asset (a 30-60-90 day phased
+  recovery plan) and dropped the weaker skill's invented "mid-2025 tightening" claim.
+
+Curation cut (72 to 67): to land on a clean "67 Free Skills for Amazon Sellers"
+brand, the five weakest-by-standalone-value skills were cut. Same criterion as the
+earlier cleanup rounds (audience size, immediacy, standalone value, overlap):
+- amz-pricing-war-defense. mostly a router to four sibling skills. also clears the
+  orphan one-skill Strategic category.
+- amz-creator-connections-brief. the thinnest skill, niche influencer-campaign audience.
+- amz-attribution-campaign-planner. narrow off-Amazon-traffic audience, paired with
+  creator-connections.
+- amz-aeo-external-content-plan. overlapped amz-ai-search-optimization on AI-citation
+  strategy. off-Amazon content is a narrower play.
+- amz-buyer-abuse-defense. overlapped amz-chargeback-defense on evidence packets.
+  chargeback-defense is the more universal of the pair and was kept.
+The core toolkit (research, listing, PPC, fees, reviews, inventory) is untouched.
+
+2026 factual corrections, each verified against a primary source or hedged:
+- Subscribe & Save: removed the retired "10% for 5-or-more items" auto-tier.
+- Chargeback: A-to-z merchant response window made consistent at 3 calendar days.
+- Reimbursement: corrected to reflect Amazon still auto-reimburses FC loss/damage.
+  cost basis fixed to manufacturing cost excluding freight and duty (Mar 2025).
+- Aged inventory: replaced the old 180/365-day LTSF model with the 181-day tiered
+  Aged-Inventory Surcharge.
+- Named the live 2024 fees where missing: Returns Processing Fee, Low-Inventory-Level
+  Fee, Inbound Placement Service Fee.
+- Coupon: corrected to the $5 + 2.5%-of-coupon-sales fee model (June 2025).
+- Tariffs: made regime-agnostic and added the Section 321 / de minimis suspension.
+- Dates: relativized hard-coded Prime Day and PBDD dates (they shift yearly. Prime
+  Day 2026 landed in June, which is why fixed dates were wrong).
+- AI image: removed fabricated rejection stats. the Delta-E tolerance is now framed
+  as the skill's own QA heuristic, not an Amazon-published rule.
+- Vine: fixed the ROI math so the conversion lift applies to incremental future
+  sessions, not retroactively to all baseline traffic.
+
+Framework naming: nine skills that carried a bare table or list got a memorable
+named model (product-photography, negative-keywords, suspension-appeal, rank-tracker,
+sales-estimator, subscribe-save, creator-connections-brief, inbound-placement-
+optimizer, account-health-triage).
+
+De-duplication without merge: ai-search-optimization and ppc-campaign now hand off to
+the canonical deep-dive skills (attributes-completer, negative-keywords) instead of
+reproducing their audits.
+
+Principle held throughout: when an exact 2026 figure could not be confidently
+verified, the skill hedges ("confirm in Seller Central") rather than stating a
+number. a correct hedge beats a confident wrong number.

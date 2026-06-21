@@ -2,9 +2,9 @@
 name: amz-vine-roi-decision
 description: >-
   Calculates whether Amazon Vine enrollment is net-positive for a given SKU before
-  the seller burns $620 all-in on a Tier 3 enrollment. Uses category-specific CVR
-  lift benchmarks and a hard cap rule. About 15% of Vine enrollments are
-  net-negative, this catches them. Use when a user asks about Vine math, Vine
+  the seller commits the enrollment fee plus units on a Tier 3 enrollment. Uses
+  category-specific CVR lift benchmarks and a hard cap rule to catch the enrollments
+  that quietly lose money. Use when a user asks about Vine math, Vine
   ROI, or which tier to pick. Trigger phrases: "Vine ROI", "is Vine worth it",
   "Vine math", "Vine Tier 0 1 3 decision". Works with zero tools.
 metadata:
@@ -15,12 +15,15 @@ metadata:
 
 # Vine ROI Decision
 
-Sellers default to Tier 3 (30 reviews) on every new SKU because it sounds like
-"the most reviews fastest". The math is brutal. $200 Vine fee + 30 units at
-landed cost. For a $14 supplement with $4 margin, that is $620 all-in to get
-30 reviews. If those reviews lift CVR by less than 4% over 90 days, the SKU
-is net-negative. About 15% of enrollments fail this test. This skill catches
-them before the credit card hits.
+Sellers default to Tier 3 (up to 30 reviews) on every new SKU because it sounds like
+"the most reviews fastest". The cash adds up. The Tier 3 enrollment fee plus 30 units at
+landed cost. For a $14 supplement with $4 margin, the fee plus the give-away units run
+several hundred dollars to get reviews. The fee itself is charged about seven days after
+the first Vine review posts, and if no review ever posts you are not charged the fee
+(you still eat the units shipped). The payback only comes from the extra conversion
+those reviews earn on future traffic, so if the lift is too small to cover the outlay,
+the SKU is net-negative. A meaningful share of enrollments fail this test. This skill
+catches them before the spend.
 
 ## When to use this
 
@@ -31,14 +34,20 @@ them before the credit card hits.
 
 ## The framework. The Vine ROI Calc
 
+The gain is incremental. Reviews lift conversion only on the sessions that happen after
+the reviews land, and only by the lift itself (the extra CVR points), not by recrediting
+your whole existing conversion rate. So apply the lift to forward sessions at the margin:
+
 ```
-Vine ROI = (Expected CVR lift x Sessions x AOV x Margin x 90 days)
-          minus (Vine fee + N units x landed cost)
+Incremental gain = (CVR lift in points x Forward sessions over the window x AOV x Margin per order)
+Vine net = Incremental gain minus (Vine fee + N units x landed cost)
 ```
 
 Where:
-- N = 2 for Tier 0, 10 for Tier 1, 30 for Tier 3
-- Vine fee = $0 for Tier 0, $75 for Tier 1, $200 for Tier 3
+- CVR lift in points = the percentage-point increase, not a new total CVR applied to baseline
+- Forward sessions = sessions expected after reviews post, over the measurement window
+- N = 2 for Tier 0, 10 for Tier 1, 30 for Tier 3 (units given away)
+- Vine fee = $0 for Tier 0, $75 for Tier 1, $200 for Tier 3, per parent ASIN. confirm current Vine fees in Seller Central, the tiers shown in your account can vary
 - Expected CVR lift comes from category benchmarks below
 
 ### Category CVR lift benchmarks (90-day window, post-Vine)
@@ -62,17 +71,20 @@ The lift cannot mathematically pay it back.
 1. **Pull the inputs.** Sessions per day (Business Reports), current CVR, AOV,
    margin per unit, landed cost per unit, category.
 
-2. **Project 90-day baseline.** Sessions x 90 x current CVR x AOV x margin %.
-   Call this Baseline Profit.
+2. **Project forward sessions.** Sessions per day x the days in the window that fall
+   after reviews post (reviews drip over 30 to 60 days, so the early window earns no
+   lift). Call this Forward Sessions.
 
-3. **Apply lift to each tier.** Use the category benchmark midpoint. Calculate
-   Lifted Profit for Tier 0, Tier 1, Tier 3.
+3. **Apply lift in points to each tier.** Use the category benchmark midpoint as a
+   percentage-point increase. Incremental gain = lift in points x Forward Sessions x
+   AOV x margin %. Do this for Tier 0, Tier 1, Tier 3. This is the gain on top of
+   baseline, never a recredit of baseline conversion.
 
-4. **Subtract enrollment cost.** Tier cost = Vine fee + (N x landed cost). Net
-   gain = Lifted Profit. Baseline Profit. Tier cost.
+4. **Subtract enrollment cost.** Tier cost = Vine fee + (N x landed cost). Net gain =
+   Incremental gain minus Tier cost.
 
-5. **Apply the hard cap.** Per-review cost / 90-day gross profit. If > 15% on
-   the best tier, skip Vine entirely.
+5. **Apply the hard cap.** Per-review cost / projected gross profit over the window. If
+   > 15% on the best tier, skip Vine entirely.
 
 6. **Pick the winning tier.** Highest net gain that clears the cap. Often Tier
    1 wins over Tier 3 because the marginal 20 units cost more than the marginal
@@ -89,13 +101,13 @@ The lift cannot mathematically pay it back.
 - Sessions/day: [X] | Current CVR: [Y%] | AOV: $[Z] | Margin: $[M]/unit
 - Landed cost: $[L]/unit | Category: [cat]
 
-**90-day baseline profit**: $[X]
+**Forward sessions over the window**: [X]
 
 **Tier comparison**
-| Tier | CVR lift | Lifted profit | Cost | Net gain | Per-review cost % |
-| 0    | [%]      | $[X]          | $[Y] | $[Z]     | [%]               |
-| 1    | [%]      | $[X]          | $[Y] | $[Z]     | [%]               |
-| 3    | [%]      | $[X]          | $[Y] | $[Z]     | [%]               |
+| Tier | CVR lift (pts) | Incremental gain | Cost | Net gain | Per-review cost % |
+| 0    | [pts]          | $[X]             | $[Y] | $[Z]     | [%]               |
+| 1    | [pts]          | $[X]             | $[Y] | $[Z]     | [%]               |
+| 3    | [pts]          | $[X]             | $[Y] | $[Z]     | [%]               |
 
 **Verdict**: [GO Tier X | CAUTION Tier X | SKIP]
 **Reasoning**: [1-2 sentences]
@@ -104,17 +116,24 @@ The lift cannot mathematically pay it back.
 ## Worked example
 
 ASIN: collagen peptides, $26 price, $9 margin, $7 landed cost. Category:
-Supplements. Sessions/day = 85. Current CVR = 11%. AOV = $26. Baseline 90-day
-profit = 85 x 90 x 0.11 x 9 = $7,573.
+Supplements. Sessions/day = 85. Current CVR = 11%. AOV = $26.
 
-Tier 3: CVR lift 9% midpoint -> new CVR 12%. Lifted profit = 85 x 90 x 0.12 x 9
-= $8,262. Cost = $200 + (30 x $7) = $410. Net gain = $8,262. $7,573. $410 = $279.
-Per-review cost = $410 / $7,573 = 5.4%. Clears cap.
+The gain is incremental, on forward traffic only. Reviews are not live day one, so over a
+90-day window count roughly 60 days of post-review sessions: forward sessions = 85 x 60 =
+5,100. The lift is in CVR points, not a recredit of the existing 11%.
 
-Tier 1: CVR lift 6% midpoint -> new CVR 11.66%. Lifted profit = $8,025. Cost =
-$75 + (10 x $7) = $145. Net gain = $307. Per-review cost = 1.9%.
+Tier 3: benchmark midpoint as a lift of about 1.5 CVR points. Incremental orders =
+0.015 x 5,100 forward sessions = ~76.5 extra orders. Incremental gain = 76.5 x $9 margin
+= $689. Cost = $200 + (30 x $7) = $410. Net gain = $689 minus $410 = $279. Per-review
+cost = $410 / projected window gross profit. Clears cap.
 
-Verdict: GO Tier 1. Higher net gain than Tier 3 with 1/3 the cash outlay.
+Tier 1: benchmark midpoint as a lift of about 1.0 CVR point. Incremental orders = 0.010 x
+5,100 = ~51 extra orders. Incremental gain = 51 x $9 margin = $459. Cost = $75 + (10 x $7)
+= $145. Net gain = $459 minus $145 = $314. Per-review cost is lower still.
+
+Verdict: GO Tier 1. Higher net gain than Tier 3 with a third of the cash outlay, because
+the marginal 20 units cost more than the marginal lift returns. Note the gain is the
+extra orders only, never the whole baseline re-credited at a higher rate.
 
 ## Quality check
 

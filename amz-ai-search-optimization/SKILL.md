@@ -41,11 +41,12 @@ conversational queries (Rufus) and spoken ones (Alexa+).
    product. "How long does the battery last?", "Will it fit a 15-inch laptop?",
    "Is it dishwasher safe?". These are the queries the AI now sees.
 
-2. **Attributes audit.** Open the Seller Central Attributes section for this listing.
-   Fill every field the category template offers. battery life, materials,
-   dimensions, certifications, compatibility, use cases. The AI reads attributes
-   before it reads the title. most sellers fill under 40 percent of fields. this is
-   where most of the AI-readable signal sits.
+2. **Attributes audit.** The Seller Central Attributes section is the single
+   highest-impact AI-readable signal. the AI reads attributes before the title, and
+   most listings leave the section badly under-filled. For the full attributes fill
+   audit, see `amz-attributes-completer`. here, just confirm the high-impact
+   AI-relevant fields are populated. battery life, materials, dimensions,
+   certifications, compatibility, use cases.
 
 3. **Q&A bullets.** Rewrite bullets to directly answer the top buyer questions.
    Lead with the answer, then the supporting detail. Each bullet maps to one
@@ -139,7 +140,7 @@ Before: [...] . After: [...]
 [SnS enrollment, voice reorder flow]
 
 ### External handoff
-[topics for off-Amazon content. see amz-aeo-external-content-plan]
+[topics for off-Amazon content the AI assistants cite. Reddit, YouTube, Quora]
 ```
 
 ## Worked example

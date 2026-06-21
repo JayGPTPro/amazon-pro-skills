@@ -28,10 +28,11 @@ sets up tracking that matters and reads the movements correctly.
 - A seller is tracking 200 keywords and drowning in noise.
 - A launch is underway and rank progress needs monitoring.
 
-## The framework. Track What Decides Revenue
+## The framework. The Three-Tier Rank Ladder
 
-Tracking every keyword is noise. Track the keywords that decide revenue. Sort the
-keyword set into three tiers and track accordingly.
+Tracking every keyword is noise. Track the keywords that decide revenue. The
+Three-Tier Rank Ladder sorts the keyword set into three tiers, each with its own
+tracking cadence.
 
 | Tier | Which keywords | Track how |
 |------|----------------|-----------|
@@ -41,33 +42,37 @@ keyword set into three tiers and track accordingly.
 
 Tracking the 10 keywords that make the money beats tracking 200 that do not.
 
-## Tracking the AI recommendations panel
+## Watching the AI shopping surfaces (emerging, not yet a rank metric)
 
 Standard search rank is no longer the whole picture. A growing share of buyer
-attention sits in the AI recommendations surfaces. Rufus citation panels on the
-web, the Alexa+ spoken recommendation, the "Researched by AI" recommendation
-strip, and the COSMO-driven cross-sell modules. A listing can hold organic
-position 4 and still lose share because it does not get cited by Rufus, and a
-listing can sit on page 3 of literal search and still win meaningful traffic
-because Rufus quotes it.
+attention is moving into Amazon's AI shopping surfaces: the in-app AI assistant
+answers and the recommendation modules it generates. These surfaces are new and
+still shifting fast. Amazon's AI assistant launched as Rufus and, as of mid-2026,
+is being folded into a unified "Alexa for Shopping" experience, so the exact
+names, panels, and behaviors keep changing. A listing can hold a solid organic
+position and still lose share if the assistant does not surface it, and a listing
+can sit deeper in literal search and still pick up traffic if the assistant
+recommends it.
 
-Track these in addition to standard rank, not in place of it. for each money
-keyword, also log:
+Important: there is no public, precise rank metric for these surfaces today. Do
+not track them like organic rank, because there is no stable position number to
+track and the surfaces themselves are in flux. Monitor them qualitatively
+instead. for a handful of money keywords, occasionally:
 
-- **Rufus citation presence.** Type the keyword or a question variant of it into
-  search and check whether the AI panel cites the ASIN. Track yes/no daily on
-  money keywords, weekly on growth keywords.
-- **Recommendation strip presence.** Whether the listing appears in the
-  "Researched by AI" or equivalent recommendation strip for the keyword's intent
-  cluster.
-- **Alexa+ spoken match.** For voice-relevant categories, periodically test the
-  voice query and log whether Alexa+ returns this ASIN as a top recommendation.
+- **Ask the assistant a question version of the keyword** and note whether your
+  ASIN comes up at all. This is a yes/no/sometimes observation, not a position.
+- **Glance at the AI-generated recommendation modules** for the keyword's intent
+  and note whether the listing tends to appear. Look for a directional trend over
+  weeks, not a daily number.
+- **For voice-relevant categories**, occasionally test a spoken query and note
+  whether the assistant returns the ASIN.
 
-Treat these the same way as organic rank. distinguish noise from signal, map a
-sudden drop to a cause (a listing change, a review shift, an attribute that went
-empty), and act only on real signals. A listing that loses Rufus citation while
-holding organic rank is usually a COSMO intent-match problem. the use case or
-audience signal in the copy went vague (see amz-ai-search-optimization).
+Treat all of this as a soft, directional signal, not a precise rank. If the
+listing stops surfacing in the AI modules while holding organic rank, the likely
+issue is an intent-match gap under COSMO. the use case or audience signal in the
+copy has gone vague (see amz-ai-search-optimization). Act on a clear sustained
+pattern, not a single observation, and never let these noisy surfaces override
+what your real organic rank and sales data are telling you.
 
 ## Reading a rank movement
 
@@ -160,7 +165,7 @@ never the problem.
 
 ## Built by Jay GPT Pro
 
-Part of **Amazon Pro Skills**. 50 production-grade skills for serious Amazon sellers.
+Part of **Amazon Pro Skills**. Production-grade skills for serious Amazon sellers.
 Free and open. Built by Jay Margaliot.
 
 I share a new AI play for Amazon sellers every week, free, in my WhatsApp group.

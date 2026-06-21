@@ -49,35 +49,46 @@ because there is nothing to sell at the peak.
 
 Amazon now runs two major Prime events each year, and sellers conflate them all
 the time. They have different prep windows, different inventory leads, and
-different ad warmup curves.
+different ad warmup curves. The exact dates move every year, and Amazon has
+shifted them before (the summer event has landed in June in some years, July in
+others). Never hard-code a date. confirm the exact dates for the current year
+in Seller Central, then apply the lead times below relative to that date.
 
-### Prime Day (July)
+### The summer Prime event
 
-The flagship summer event. Lands in mid-July. Prep window opens around **May
-15** for deal submissions, inventory must be checked in by late June at the
-latest, listing refresh live and indexed by late June, ad budget ramping
-through the first two weeks of July. The event runs hot. expect peak CPCs and a
-sharp demand spike on enrolled deals.
+The flagship event, historically mid-year (it has fallen in June or July
+depending on the year). Treat its date as a moving target and confirm it each
+year. Working backward from the confirmed date: deal submissions close roughly
+8 to 10 weeks ahead, inventory should be checked in by about 2 to 3 weeks
+before, the listing refresh should be live and indexed by about 2 to 3 weeks
+before, and the ad budget ramps through the two weeks into the event. The event
+runs hot. expect peak CPCs and a sharp demand spike on enrolled deals.
 
-### Prime Big Deal Days (October)
+### The fall Prime event (Prime Big Deal Days)
 
-The fall counterpart, positioned as the kickoff to Q4. Lands in early to mid
-October. Prep window opens around **August 15** for deal submissions, inventory
-must be checked in by mid-September, listing refresh live and indexed by late
-September, ad budget ramping through the first week of October.
+The fall counterpart, positioned as the kickoff to Q4. Historically lands in
+early to mid October, but Amazon confirms it closer to the event, so verify the
+date each year rather than assuming. Working backward from the confirmed date:
+deal submissions close roughly 8 to 10 weeks ahead, inventory checked in by
+about 3 weeks before, the listing refresh live and indexed by about 2 to 3
+weeks before, and the ad budget ramping through the week into the event.
 
-Critical differences from Prime Day. The October event sits inside the broader
-Q4 ramp, so the ad warmup is longer (the demand curve begins building in late
-September) and the wind-down is shorter (it bleeds straight into Black Friday
+Critical differences from the summer event. The fall event sits inside the
+broader Q4 ramp, so the ad warmup is longer (the demand curve begins building
+weeks ahead) and the wind-down is shorter (it bleeds straight into Black Friday
 and Cyber Monday prep, not into a quiet month). Inventory lead time is also
-tighter for sellers with overseas freight, because the October event lands
-during the same window when Q4 holiday inventory is moving on the same routes.
+tighter for sellers with overseas freight, because the fall event lands during
+the same window when Q4 holiday inventory is moving on the same routes.
 Order earlier.
 
 A seller running both events does not run the same plan twice. Different prep
-windows, different inventory PO dates, different ad warmup, and the October
-event must hand off cleanly to the November and December peaks without leaving
+windows, different inventory PO dates, different ad warmup, and the fall event
+must hand off cleanly to the November and December peaks without leaving
 the listing depleted.
+
+This skill is the broad annual timeline. For the deep Q4 work, the week-by-week
+reorder calendar, per-SKU peak velocity multipliers, inbound delay buffers, and
+FBM fallback triggers, hand off to amz-q4-restock-war-room.
 
 ## The five workstreams
 
@@ -183,7 +194,7 @@ the entire season.
 
 ## Built by Jay GPT Pro
 
-Part of **Amazon Pro Skills**. 50 production-grade skills for serious Amazon sellers.
+Part of **Amazon Pro Skills**. Production-grade skills for serious Amazon sellers.
 Free and open. Built by Jay Margaliot.
 
 I share a new AI play for Amazon sellers every week, free, in my WhatsApp group.

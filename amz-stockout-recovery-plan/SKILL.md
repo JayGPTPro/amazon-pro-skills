@@ -2,10 +2,10 @@
 name: amz-stockout-recovery-plan
 description: >-
   Produces a 30-day day-by-day recovery plan after an Amazon stockout. Aggressive
-  PPC, external traffic, review velocity, A+ refresh, in the right sequence. With
-  this plan BSR returns to within 80% of pre-stockout in 21 days. Without it,
-  recovery takes 60-90 days. Use when a user mentions stockout, ranking lost,
-  BSR recovery, or post-stockout. Trigger phrases: "Amazon stockout recovery",
+  PPC, external traffic, review velocity, A+ refresh, in the right sequence. A
+  structured sequence recovers BSR far faster than doing nothing, which can leave
+  a listing depressed for a quarter. Use when a user mentions stockout, ranking
+  lost, BSR recovery, or post-stockout. Trigger phrases: "Amazon stockout recovery",
   "ranking lost after stockout", "BSR recovery", "post-stockout playbook".
   Works with zero tools.
 metadata:
@@ -17,10 +17,12 @@ metadata:
 # Stockout Recovery Plan
 
 You stocked out. Three days dark, ranking gone. PPC bid suggestions look
-insane. Most sellers either burn $400/day trying to claw back with no plan,
-or they do nothing and watch BSR collapse for 60-90 days. There is a real
-playbook. Execute it day-by-day and BSR returns to within 80% of pre-stockout
-inside 21 days. Skip it and you are looking at a quarter of lost momentum.
+insane. Most sellers either burn cash trying to claw back with no plan,
+or they do nothing and watch BSR sit depressed for weeks. There is a real
+playbook. Execute it day-by-day and you give the listing the best shot at a
+fast recovery. Skip it and you risk a quarter of lost momentum. The numbers
+in this skill are illustrative examples. your actual recovery curve depends on
+category, stockout length, competition, and how cleanly you execute.
 
 ## When to use this
 
@@ -41,9 +43,11 @@ source, and check-in metric.
 | 3. Velocity push | 8-14 | Bids 1.2x, harvest converters | Review velocity, A+ refresh | Reviews/day, CVR |
 | 4. Stabilize | 15-30 | Bids 1.0x, normalize ACoS | Organic | BSR vs baseline |
 
-Expected outcome: BSR returns to 80% of pre-stockout by day 21, 95% by day 30
-if executed cleanly. Stockouts longer than 7 days lose this curve and need a
-relaunch strategy instead.
+Illustrative outcome: in a clean recovery, you might see BSR climb back toward
+its pre-stockout level over the 30 days, with most of the gain in the back half
+of the curve. Treat any specific percentage as an example, not a promise. the
+real curve depends on category, stockout length, and competition. Stockouts
+longer than 7 days tend to lose this curve and need a relaunch strategy instead.
 
 ## Step by step
 
@@ -66,7 +70,9 @@ relaunch strategy instead.
    review rate. Goal: review momentum and on-page relevance signals.
 
 5. **Day 15-30 Stabilize.** Normalize PPC to 1.0x. Monitor BSR vs pre-stockout
-   baseline daily. If BSR is at 80%+ by day 21, plan is on track.
+   baseline daily. Use the day-21 gate below to judge whether the curve is
+   tracking or needs an extension. these thresholds are decision triggers you
+   set, not a predicted result.
 
 6. **Daily check-ins.** Build a tracker: Sessions, CVR, BSR, ACoS, Reviews
    added. Compare to pre-stockout 7-day average.
@@ -109,7 +115,10 @@ relaunch strategy instead.
 - BSR >= 80% -> normal ops
 ```
 
-## Worked example
+## Worked example (illustrative)
+
+The numbers below are a made-up scenario to show the shape of the plan, not a
+benchmark to expect. Your sessions, costs, and recovery pace will differ.
 
 ASIN: B0EXAMPLE, dog leash. Pre-stockout baseline: 220 sessions/day, CVR 9.4%,
 BSR #847 in Pet Supplies, 1.2 reviews/day, $86/day ad spend. Stockout duration
@@ -128,11 +137,16 @@ Phase 3 (Nov 11-17): PPC at 1.2x exact match only. A+ Content refreshed with
 2 new modules. Request a Review on all 156 orders from Phase 1+2. Reviews
 added in Phase 3: 14 (vs baseline 8 over 7 days).
 
-Phase 4 (Nov 18 onward): PPC normalized. Day 21 BSR check = #1,012 (83% of
-baseline #847). Plan on track. Day 30 BSR = #862 (98% of baseline). Recovered.
+Phase 4 (Nov 18 onward): PPC normalized. In this example the listing climbs back
+toward its #847 baseline over the back half of the curve, with the day-21 and
+day-30 checks used to decide whether to extend Phase 3. Your own BSR path will
+look different. the point is the sequence and the gates, not these specific ranks.
 
-Total recovery cost: $4,200 (PPC) + $540 (creators) = $4,740. Lost-sales-avoided
-vs no-plan recovery: roughly $18,000 over 60 days. Net: +$13,260.
+Costs in this scenario run to a few thousand dollars of incremental PPC plus a
+modest creator spend. Whether that pencils out depends on your margin and unit
+economics. run your own avoided-loss math rather than assuming a fixed return.
+A structured recovery is generally cheaper than letting BSR sit depressed, but
+the exact net is yours to compute, not a number this skill can promise.
 
 ## Quality check
 
@@ -146,7 +160,7 @@ vs no-plan recovery: roughly $18,000 over 60 days. Net: +$13,260.
 
 - **Starting at "normal" PPC bids.** Algorithm needs the signal flood. 2x bids day 1-3 is the price of admission.
 - **Skipping external traffic.** Off-Amazon signals are weighted in 2026 A9/COSMO. PPC alone is not enough.
-- **No A+ refresh.** Page-edit signals trigger re-crawl. Easy +5% conversion lift.
+- **No A+ refresh.** Page-edit signals trigger a re-crawl and can lift conversion. treat any specific percentage as listing-dependent, not guaranteed.
 - **No daily tracking.** Without metrics, you cannot tell if Phase 3 needs an extension.
 - **Stockouts over 7 days.** Past 7 days, the curve breaks. Treat as relaunch, not recovery.
 

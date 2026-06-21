@@ -28,9 +28,13 @@ the plan to grow and hold subscribers.
 - A seller wants recurring revenue and predictable demand.
 - Subscribe and Save is on but the subscriber base is not growing.
 
-## The framework. Does it fit, then grow it
+## The framework. The Subscriber Flywheel
 
-### Step one. The fit test
+Three turns that compound: Fit, Fund, Flywheel. Qualify the product, set the discount
+that pays back over a subscriber lifetime, then convert and hold so the base grows on
+its own momentum.
+
+### Turn one. The fit test
 
 Subscribe and Save only works for products people genuinely re-buy on a schedule. Run
 the fit test:
@@ -44,17 +48,19 @@ the fit test:
 
 Fail the fit test and Subscribe and Save is the wrong tool. do not force it.
 
-### Step two. The discount tier
+### Turn two. Fund the discount
 
-Amazon offers 5 percent off as the default subscription discount, and 10 percent off
-when the customer has 5 or more subscriptions arriving in one month. Sellers can
-also fund a deeper discount on top of the base. The discount is the
-price of recurring revenue. Set it against the math: a subscriber's lifetime value is
-many orders, so a slightly deeper discount that meaningfully lifts subscriber
-conversion usually pays. Confirm the discounted price still clears contribution
-margin on every order.
+The lever you control is the seller-funded discount, set in the dashboard, commonly in
+steps from 0 percent up to around 10 to 15 percent. On top of whatever you fund, Amazon
+adds its own funded amount on qualifying multi-item subscription deliveries, so the
+customer can see more off than you pay for. Set your seller-funded SnS discount in the
+dashboard and confirm the current Amazon-funded base, since the exact split and
+qualifying conditions change. The discount is the price of recurring revenue. Set it
+against the math: a subscriber's lifetime value is many orders, so a slightly deeper
+discount that meaningfully lifts subscriber conversion usually pays. Confirm the
+discounted price still clears contribution margin on every order.
 
-### Step three. Convert and hold
+### Turn three. The flywheel. Convert and hold
 
 - **Convert.** Make the subscribe option visible and attractive. Mention the
   replenishment angle in the listing copy and A+. A buyer does not subscribe to a
@@ -147,7 +153,7 @@ first, because a coffee subscriber who hits an out-of-stock cancels and switches
 
 ## Built by Jay GPT Pro
 
-Part of **Amazon Pro Skills**. 50 production-grade skills for serious Amazon sellers.
+Part of **Amazon Pro Skills**. Production-grade skills for serious Amazon sellers.
 Free and open. Built by Jay Margaliot.
 
 I share a new AI play for Amazon sellers every week, free, in my WhatsApp group.

@@ -29,10 +29,11 @@ estimate, and a set of BSRs into a market size, with honest confidence bounds.
 - Judging whether demand justifies entering a category.
 - Comparing the demand behind two products or two price points.
 
-## The framework. How to read a BSR
+## The framework. The Rank Curve Read
 
-BSR is a rank, not a count, and the rank-to-sales curve has three properties that
-must shape every estimate.
+BSR is a rank, not a count. You never convert it with a magic constant. you read it
+against the sales curve it sits on. The Rank Curve Read is three properties of that
+curve, and every honest estimate has to respect all three.
 
 1. **It is category-specific.** A BSR of 5,000 in a huge category (Home, Kitchen,
    Beauty) means far more sales than 5,000 in a small one. Always estimate within the
@@ -140,7 +141,7 @@ rank, to tighten the range before making a sourcing decision on it.
 
 ## Built by Jay GPT Pro
 
-Part of **Amazon Pro Skills**. 50 production-grade skills for serious Amazon sellers.
+Part of **Amazon Pro Skills**. Production-grade skills for serious Amazon sellers.
 Free and open. Built by Jay Margaliot.
 
 I share a new AI play for Amazon sellers every week, free, in my WhatsApp group.

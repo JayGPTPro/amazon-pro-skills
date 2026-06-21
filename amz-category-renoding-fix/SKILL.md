@@ -4,8 +4,8 @@ description: >-
   Detect and fix silent Amazon category re-noding. When Amazon quietly moves
   listings to incorrect browse-tree nodes, sales drop sharply because the
   listing now ranks against the wrong queries. This skill audits the nodes,
-  identifies the wrong placements, and writes the contributor-portal correction
-  case. Use when a user notices a sudden sales drop with flat ad spend, a
+  identifies the wrong placements, and writes the browse-node correction case
+  for Seller Central. Use when a user notices a sudden sales drop with flat ad spend, a
   listing in the wrong browse category, or wonders why their product is not
   showing up for the right keywords. Trigger phrases: "category", "browse node",
   "wrong category", "re-noded", "sales dropped no reason", "browse tree". Works
@@ -64,10 +64,13 @@ If the node is wrong and the data shows the drop, file the correction.
    for [ASIN]". Body: current node, requested node, business reason, before/after
    data.
 
-5. **Submit through the right path.** For Brand Registered sellers, file through
-   Brand Registry > Manage Your Case. For everyone else, Seller Central > Help >
-   Get Support > Catalog category. Contributor Portal is largely deprecated for
-   most sellers. Attach a screenshot of the wrong placement.
+5. **Submit through the right path.** First try the self-serve fix: edit the
+   listing's recommended browse node / item type, using the Browse Tree Guide to
+   pick the correct node, either on the listing directly or via the Category
+   Listings Report. If the self-serve edit does not stick, open a case. Brand
+   Registered sellers file through Brand Registry > Manage Your Case. everyone
+   else uses Seller Central > Help > Get Support > Catalog category. Attach a
+   screenshot of the wrong placement and reference the correct browse node ID.
 
 6. **Track resolution.** Re-noding corrections take 5-15 business days. Watch the
    listing's breadcrumb and the session recovery.
@@ -95,7 +98,10 @@ Body:
 - Data attached: sessions and conversion before/after the change
 
 ### Submission path
-Brand Registry case (preferred) or Seller Central > Catalog support case
+1. Self-serve: edit recommended browse node / item type via the listing or
+   Category Listings Report, using the Browse Tree Guide
+2. If that fails: Brand Registry case (if enrolled) or Seller Central > Catalog
+   support case
 ```
 
 ## Worked example
@@ -112,7 +118,7 @@ sessions recover to baseline.
 - The current and expected nodes are documented, not described vaguely.
 - The drop is tied to a specific date by data, not assumed.
 - The expected node is justified by comparable competitor placement.
-- The case is filed through the right channel (Contributor Portal or Catalog support).
+- The fix is attempted self-serve first (listing / Category Listings Report via the Browse Tree Guide), then escalated to the right case channel (Brand Registry or Catalog support) if needed.
 - Resolution is tracked to confirm recovery.
 
 ## Common mistakes

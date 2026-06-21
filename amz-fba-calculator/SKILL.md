@@ -46,10 +46,11 @@ are where margin dies.
 Selling price
   minus  Referral fee        (category percent of price, 6 to 20%+ by category, min ~0.30)
   minus  FBA fulfillment fee (by size tier and billable weight, see shipping layer)
+  minus  Returns processing  (per-returned-unit in high-return-rate categories, see below)
   minus  Monthly storage     (per-unit share. cubic feet x rate, higher Oct to Dec)
   minus  Unit cost           (landed: factory price + freight + duty per unit)
   minus  Returns reserve     (return rate x cost of a returned unit)
-  minus  Variable extras     (prep, inbound shipping to Amazon, long-term storage risk)
+  minus  Variable extras     (prep, inbound shipping to Amazon, aged-inventory risk)
   minus  Promo and ads       (allocate a realistic per-unit ad cost)
   =      Net profit per unit
 ```
@@ -95,6 +96,17 @@ Q4 carries a peak fulfillment surcharge on top of the standard fulfillment fee,
 distinct from the elevated Q4 storage rate. Inbound shipping from the supplier or
 the seller to the Amazon warehouse is part of the unit's real fulfillment cost and
 is routinely forgotten. add the per-unit share of inbound.
+
+### Returns Processing Fee
+
+Amazon adds a Returns Processing Fee per returned unit for high-return-rate
+categories. Apparel and shoes have long been charged on every returned unit, and the
+fee now reaches many other categories whose return rate runs above the category
+benchmark. The charge is added per returned unit for high-return-rate categories.
+check your category's rate in the current fee schedule. On a product with a meaningful
+return rate this is a real per-sold-unit cost once spread across units sold, not just
+across units returned. fold it into the returns line rather than ignoring it. Low-
+volume products (below the monthly unit threshold) may be exempt. verify your status.
 
 ## FBA versus FBM
 
@@ -145,7 +157,9 @@ not the selling price.
    driver.
 
 4. **Fulfillment fee.** Look up the fee for the tier and billable weight. Add the
-   Q4 peak surcharge if the plan covers Q4.
+   Q4 peak surcharge if the plan covers Q4. If the category is high-return-rate
+   (apparel, shoes, and others over the benchmark), add the Returns Processing Fee
+   per returned unit, spread across units sold. verify the rate in the fee schedule.
 
 5. **Storage.** Compute the unit volume in cubic feet. Use the current Jan-Sep
    monthly rate for off-peak and the current Oct-Dec rate for Q4 (verify in
@@ -182,11 +196,12 @@ Billable weight: [the greater]   Size tier: [tier]
 Referral fee:        [-$]
 FBA fulfillment fee: [-$]   (size tier: [tier], billable weight: [w])
 Q4 peak surcharge:   [-$]   (if Q4 plan)
+Returns processing:  [-$]   (per returned unit, high-return-rate category, verify rate)
 Storage (per unit):  [-$]   (rate band: [Jan-Sep / Oct-Dec], verify in dashboard)
 Unit cost (landed):  [-$]
 Returns reserve:     [-$]   (based on manufacturing cost, 2025+ rule)
 Prep + inbound:      [-$]
-Long-term storage risk: [-$]
+Aged-inventory risk: [-$]
 Ad cost (allocated): [-$]
 
 ### FBM comparison (if requested)
@@ -227,6 +242,8 @@ packaging accordingly.
 - Billable weight is the greater of actual and dimensional weight, and it is stated.
 - A product driven by dimensional weight is explicitly flagged.
 - The fulfillment fee is derived from size tier and billable weight, not from price.
+- A high-return-rate category includes the Returns Processing Fee per returned unit,
+  with the rate marked for verification rather than hardcoded.
 - Any product within 10 percent of a tier boundary is flagged.
 - Storage uses the current Jan-Sep or Oct-Dec rate band, marked as a dashboard
   verification, not a hardcoded number.

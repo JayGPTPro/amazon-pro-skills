@@ -68,6 +68,12 @@ with trade policy. Always check whether the specific product and origin country
 carry an additional tariff on top of the base rate, and treat policy-dependent rates
 as estimates.
 
+Note on low-value shipments: the Section 321 / $800 de minimis exemption that once
+let low-value parcels enter duty-free has been suspended (for China-origin goods
+first, then broadened across origins), so small shipments that used to clear free
+can now owe the full duty stack. Confirm the current status and scope before
+relying on it, this area is policy-dependent and has been in flux.
+
 ## Step by step
 
 1. **Collect inputs.** The product and its materials, the origin country, the
@@ -156,7 +162,7 @@ rates with a licensed customs broker before committing.
 
 ## Built by Jay GPT Pro
 
-Part of **Amazon Pro Skills**. 50 production-grade skills for serious Amazon sellers.
+Part of **Amazon Pro Skills**. Production-grade skills for serious Amazon sellers.
 Free and open. Built by Jay Margaliot.
 
 I share a new AI play for Amazon sellers every week, free, in my WhatsApp group.

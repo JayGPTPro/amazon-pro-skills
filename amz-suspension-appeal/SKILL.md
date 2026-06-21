@@ -45,31 +45,43 @@ suspension.
 
 ## Part 2. Appeal. the Plan of Action
 
-A Plan of Action that gets reinstated has a specific structure. Amazon is reading for
-three things, in this order. miss one and the appeal fails.
+### Where to submit it
 
-### 1. Root cause
+In Seller Central, go to Account Health (under Performance) and use the reactivation
+control on the flagged enforcement. on a deactivated account this is the "Reactivate
+your account" button. on a single deactivated listing it is the appeal or
+"Reactivate" action on that listing's violation. Submit the Plan of Action and any
+requested documents through that in-console form, tied to the case, not by email. it
+keeps the appeal attached to the case record Amazon's reviewer reads.
+
+### The framework. The Three Pillars of a Plan of Action
+
+A Plan of Action that gets reinstated stands on three pillars. Amazon reads for them
+in this order, and the appeal collapses if any one is missing. Root Cause, Correction,
+Prevention.
+
+### Pillar 1. Root cause
 
 State the actual, specific reason this happened. Not "we will do better". The genuine
 operational cause. Amazon rejects appeals that do not show the seller understands
 what went wrong. Take responsibility. do not blame the customer or Amazon.
 
-### 2. Immediate corrective action
+### Pillar 2. Immediate corrective action
 
 What has already been done to fix the specific problem right now. Past tense, concrete,
 verifiable. Removed the listing, corrected the inventory, refunded the affected orders,
 supplied the missing document.
 
-### 3. Preventive measures
+### Pillar 3. Preventive measures
 
 The systemic change that stops it recurring. Concrete and structural: a new process,
 a new check, a supplier change, a staffing or training change. "We will be more
 careful" is not a preventive measure. "We added a pre-listing compliance check at
 this step" is.
 
-The Plan of Action is factual, concise, and unemotional. No pleading, no long story.
-root cause, what was fixed, what will prevent recurrence. Attach the evidence Amazon
-asked for.
+All three pillars, in order, factual, concise, and unemotional. No pleading, no long
+story. root cause, what was fixed, what will prevent recurrence. Attach the evidence
+Amazon asked for.
 
 ## Step by step
 
@@ -88,8 +100,9 @@ asked for.
 
 6. **Define the preventive measures.** Structural changes, not promises.
 
-7. **Assemble the Plan of Action** in the three-part structure, factual and concise,
-   with the requested evidence attached.
+7. **Assemble the Plan of Action** on the Three Pillars, in order, factual and
+   concise, with the requested evidence attached. Submit it through the Account
+   Health reactivation form, not by email.
 
 8. **Run the quality check**, then deliver.
 
@@ -101,17 +114,18 @@ asked for.
 ### If prevention
 [metric] . [current vs threshold] . [drift?] . [corrective action]
 
-### If appeal. Plan of Action
+### If appeal. Plan of Action (the Three Pillars)
 Amazon's stated reason: [exact reason]
+Submit via: Account Health > reactivate / appeal on the flagged enforcement
 
-Root cause:
+Pillar 1. Root cause:
 [the specific, honest operational cause]
 
-Immediate corrective action taken:
+Pillar 2. Immediate corrective action taken:
 - [concrete past-tense action]
 - ...
 
-Preventive measures:
+Pillar 3. Preventive measures:
 - [structural change that stops recurrence]
 - ...
 
@@ -129,14 +143,15 @@ when the complaint was filed. Corrective action taken: obtained a complete
 invoice from an authorized distributor that traces the exact units, and supplied it.
 Preventive measures: the seller now sources this product only through the authorized
 distributor and keeps a traceable invoice on file for every inbound shipment before
-it is listed. The Plan of Action is three short sections, factual, with the invoice
-attached. it answers the exact stated reason.
+it is listed. The Plan of Action is the three pillars, each a short section, factual,
+with the invoice attached, submitted through the listing's reactivation form. it
+answers the exact stated reason.
 
 ## Quality check
 
 - A live appeal answers Amazon's exact stated reason, not a generic one.
-- The Plan of Action has all three parts: root cause, corrective action, preventive
-  measures.
+- The Plan of Action stands on all Three Pillars: root cause, corrective action,
+  preventive measures.
 - The root cause is specific and honest, with no blame on the customer or Amazon.
 - Corrective actions are concrete and past tense. preventive measures are structural,
   not promises.
@@ -160,7 +175,7 @@ specialist may be warranted.
 
 ## Built by Jay GPT Pro
 
-Part of **Amazon Pro Skills**. 50 production-grade skills for serious Amazon sellers.
+Part of **Amazon Pro Skills**. Production-grade skills for serious Amazon sellers.
 Free and open. Built by Jay Margaliot.
 
 I share a new AI play for Amazon sellers every week, free, in my WhatsApp group.

@@ -3,12 +3,12 @@ name: amz-fee-audit
 description: >-
   Audit Amazon Payments report for fee errors. Finds incorrect FBA fulfillment
   fees (wrong size tier), missing referral fee credits on refunds, duplicate
-  charges, and FBA storage discrepancies, and produces a SAFE-T case packet per
-  finding. Use when a user asks about Amazon fee errors, overcharged fees,
-  wrong size tier, missing referral refunds, fee audit, or Payments report
-  analysis. Trigger phrases: "fee audit", "overcharged", "wrong fee", "size
-  tier error", "referral fee refund", "payments report", "FBA fee dispute". Works with
-  zero tools. the user pastes Payments report rows.
+  charges, and FBA storage discrepancies, and produces an FBA fee-discrepancy
+  case packet per finding. Use when a user asks about Amazon fee errors,
+  overcharged fees, wrong size tier, missing referral refunds, fee audit, or
+  Payments report analysis. Trigger phrases: "fee audit", "overcharged", "wrong
+  fee", "size tier error", "referral fee refund", "payments report", "FBA fee
+  dispute". Works with zero tools. the user pastes Payments report rows.
 metadata:
   author: Jay GPT Pro
   library: amazon-pro-skills
@@ -20,7 +20,9 @@ metadata:
 After the 2024 size-tier reshuffle, dimensional-tier misclassification became the
 single most common hidden fee leak. Sellers also miss referral fee credits on
 refunded orders. This skill audits the Payments report for these specific anomalies
-and writes the SAFE-T case per finding.
+and writes the FBA fee-discrepancy case per finding. Fee overcharges are disputed
+through Seller Support FBA Fee Discrepancies, not SAFE-T. SAFE-T reimburses sellers on
+certain refund and return claims, it is not the channel for FBA fee errors.
 
 ## When to use this
 
@@ -91,10 +93,11 @@ Case 1. [anomaly] . [evidence rows] . [case narrative]
 
 A seller's product is billed at large-standard but actually measures small-standard.
 20 days of orders sit at the wrong tier, costing ~1.20 USD per unit. 800 units sold
-in period = 960 USD overcharge. SAFE-T case opens with the report rows, the
-correctly-measured dimensions, and the tier-table reference. Recovery typically
-within two weeks. Structural fix: update the dimensions in the listing so the issue
-does not recur. The seller had been paying the wrong fee for months.
+in period = 960 USD overcharge. An FBA fee-discrepancy case opens under Seller Support
+FBA Fee Discrepancies with the report rows, the correctly-measured dimensions, and the
+tier-table reference. Recovery typically within two weeks. Structural fix: update the
+dimensions in the listing so the issue does not recur. The seller had been paying the
+wrong fee for months.
 
 ## Quality check
 
